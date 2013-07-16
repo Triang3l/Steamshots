@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_marginLeft="@dimen/view_margin_narrow_outer"
+  android:layout_marginRight="@dimen/view_margin_narrow_outer"
+  tools:context=".UploadActivity" >
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <TextView
+      android:id="@+id/view_upload_size"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+      android:id="@+id/view_upload_caption"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/upload_caption"
+      android:inputType="text"
+      android:maxLength="140" >
+
+      <requestFocus />
+
+    </EditText>
+
+    <EditText
+      android:id="@+id/view_upload_location"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/upload_location"
+      android:inputType="text"
+      android:maxLength="255" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="@string/upload_visibility"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <Spinner
+        android:id="@+id/view_upload_visibility"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:entries="@array/upload_visibility" />
+
+    </LinearLayout>
+
+    <CheckBox
+      android:id="@+id/view_upload_spoiler"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/upload_spoiler" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/upload_logout"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+      android:id="@+id/view_upload_error_frame"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:ignore="UseCompoundDrawables" >
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:contentDescription="@string/error"
+        android:src="@android:drawable/stat_notify_error" />
+
+      <TextView
+        android:id="@+id/view_upload_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <Button
+      android:id="@+id/view_upload_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="listenerUploadOnClick"
+      android:text="@string/upload_button" />
+
+  </LinearLayout>
+
+</ScrollView>

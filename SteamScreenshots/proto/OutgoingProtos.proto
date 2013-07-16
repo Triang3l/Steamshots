@@ -1,0 +1,107 @@
+syntax = "proto2";
+package com.steamcommunity.siplus.steamscreenshots.proto;
+
+message ClientLogonProto {
+	optional uint32 protocolVersion = 1;
+	optional uint32 obfuscatedPrivateIP = 2;
+	optional uint32 cellID = 3;
+	optional uint32 lastSessionID = 4;
+	optional uint32 clientPackageVersion = 5;
+	optional string clientLanguage = 6;
+	optional uint32 clientOSType = 7;
+	optional bool shouldRememberPassword = 8 [default = false];
+	optional string wineVersion = 9;
+	optional uint32 pingMsFromCellSearch = 10;
+	optional uint32 publicIP = 20;
+	optional uint32 qosLevel = 21;
+	optional fixed64 clientSuppliedSteamID = 22;
+	optional bytes machineID = 30;
+	optional uint32 launcherType = 31 [default = 0];
+	optional uint32 uiMode = 32 [default = 0];
+	optional bytes steam2AuthTicket = 41;
+	optional string emailAddress = 42;
+	optional fixed32 timeAccountCreation = 43;
+	optional string accountName = 50;
+	optional string password = 51;
+	optional string loginKey = 60;
+	optional bytes sonyPSNTicket = 90;
+	optional string sonyPSNServiceID = 91;
+	optional bool createNewPSNLinkedAccountIfNeeded = 92 [default = false];
+	optional string sonyPSNName = 93;
+	optional bool wasConvertedDeprecatedMsg = 70 [default = false];
+	optional string anonUserTargetAccountName = 80;
+	optional fixed64 resolvedUserSteamID = 81;
+	optional int32 eresultSentryFile = 82;
+	optional bytes shaSentryFile = 83;
+	optional string authCode = 84;
+	optional int32 otpType = 85;
+	optional uint32 otpValue = 86;
+	optional string otpIdentifier = 87;
+	optional bool steam2TicketRequest = 88;
+	optional int32 gameServerAppID = 94;
+	optional bool steamGuardDontRememberComputer = 95;
+	optional string machineName = 96;
+	optional string machineNameUserChosen = 97;
+}
+
+message ClientNewLoginKeyAcceptedProto {
+	optional uint32 uniqueID = 1;
+}
+
+message ClientUCMAddScreenshotProto {
+	message ClientUCMAddScreenshotProtoTag {
+		optional string tagName = 1;
+		optional string tagValue = 2;
+	}
+	optional uint32 appID = 1;
+	optional string filename = 2;
+	optional string thumbname = 3;
+	optional fixed32 timeCreated = 4;
+	optional uint32 width = 5;
+	optional uint32 height = 6;
+	optional uint32 permissions = 7;
+	optional string caption = 8;
+	optional string shortcutName = 9;
+	repeated ClientUCMAddScreenshotProtoTag tag = 10;
+	repeated fixed64 taggedSteamID = 11;
+	optional bool spoilerTag = 12;
+	repeated uint64 taggedPublishedFileID = 13;
+}
+
+message ClientUFSFileChunkProto {
+	optional bytes shaFile = 1;
+	optional uint32 fileStart = 2;
+	optional bytes data = 3;
+}
+
+message ClientUFSLoginRequestProto {
+	optional uint32 protocolVersion = 1;
+	optional uint64 amSessionToken = 2;
+	repeated uint32 apps = 3;
+}
+
+message ClientUFSUploadFileRequestProto {
+	optional uint32 appID = 1;
+	optional uint32 fileSize = 2;
+	optional uint32 rawFileSize = 3;
+	optional bytes shaFile = 4;
+	optional uint64 timeStamp = 5;
+	optional string fileName = 6;
+	optional uint32 platformsToSyncDeprecated = 7;
+	optional uint32 platformsToSync = 8 [default = 4294967295];
+	optional uint32 cellID = 9;
+	optional bool canEncrypt = 10;
+}
+
+message ClientUpdateMachineAuthResponseProto {
+	optional string filename = 1;
+	optional uint32 eresult = 2;
+	optional uint32 filesize = 3;
+	optional bytes shaFile = 4;
+	optional uint32 lasterror = 5;
+	optional uint32 offset = 6;
+	optional uint32 cubWrote = 7;
+	optional int32 otpType = 8;
+	optional uint32 otpValue = 9;
+	optional string otpIdentifier = 10;
+}

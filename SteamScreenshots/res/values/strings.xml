@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">Waiting for the previous action to finish…</string>
+  <string name="cancelling_title">Finishing</string>
+  <string name="delete_cancel">Cancel</string>
+  <string name="delete_ok">OK</string>
+  <string name="error">Error</string>
+  <string name="error_connection">Couldn\'t connect to Steam servers. Check your data or Wi-Fi connection.</string>
+  <string name="error_elsewhere">You are logged in elsewhere. Log out from Steam on your other devices.</string>
+  <string name="error_unconnected">You are not connected. Enable data or Wi-Fi connection.</string>
+  <string name="login_add_account">Account name</string>
+  <string name="login_add_button">Add account</string>
+  <string name="login_add_error">Couldn\'t add account.</string>
+  <string name="login_add_error_disabled">Your account is suspended by the Steam Support.</string>
+  <string name="login_add_error_exists">Account already exists on this device. Remove the account in your device settings if you wish to update your password. Your screenshots will not be deleted.</string>
+  <string name="login_add_error_guard_code">Invalid security code.</string>
+  <string name="login_add_error_password">Invalid account name or password.</string>
+  <string name="login_add_guard_code">Security code</string>
+  <string name="login_add_guard_info">A security code was sent to the email address associated with your account at %1$s.\nEnter the code below to log in.\n\nCheck your spam folder if you can\'t find it in your inbox folder.\nIf you can\'t find the message, contact Steam Support.</string>
+  <string name="login_add_guard_name">Device name (min. 6 chars)</string>
+  <string name="login_add_info">Enter your Steam login details.\nYou will be logged out on your other devices.</string>
+  <string name="login_add_label">Add account</string>
+  <string name="login_add_password">Password</string>
+  <string name="login_add_privacy">Your login information will be sent only to Steam servers and nowhere else. On this device, a login key - not your password - will be stored, and you\'ll be able to remove the account in your device settings (your screenshots will not be deleted).</string>
+  <string name="login_add_progress">Getting account information</string>
+  <string name="login_select_action_add">Add account</string>
+  <string name="login_select_corrupted">This account is corrupted. Remove it in your device settings. Your screenshots will not be deleted.</string>
+  <string name="login_select_info">Press the "Add account" button on the action bar to begin.</string>
+  <string name="login_select_label">Select your account</string>
+  <string name="notification_failure">Couldn\'t take a Steam screenshot.</string>
+  <string name="notification_failure_info">Failed to take %1$s screenshot.</string>
+  <string name="notification_success">Steam screenshot taken.</string>
+  <string name="notification_success_info">%1$s screenshot taken.</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">Hold Volume Down + Power for a screenshot.</string>
+  <string name="preview_delete">Delete the screenshot from this device?</string>
+  <string name="preview_fail">Couldn\'t load screenshot %1$d/%2$s/%3$s.</string>
+  <string name="screenshots_action_delete">Delete locally</string>
+  <string name="screenshots_action_share">Share</string>
+  <string name="screenshots_action_share_gallery">Share online gallery</string>
+  <string name="screenshots_action_upload">Upload</string>
+  <string name="screenshots_action_view">View online</string>
+  <string name="screenshots_action_view_gallery">View online gallery</string>
+  <string name="screenshots_games_empty">You don\'t have any screenshots.\n\nTake a screenshot by holding Volume Down + Power while playing a game.\n\nAn uncompressed copy of the screenshot will be saved in your device default screenshots folder.</string>
+  <string name="screenshots_images_contentdescription">Screenshot</string>
+  <string name="screenshots_images_delete">Delete selected screenshots from this device?</string>
+  <string name="screenshots_images_delete_single">Delete selected screenshot from this device?</string>
+  <string name="screenshots_images_select">Select a game from the left.</string>
+  <string name="screenshots_images_uploaded">Uploaded</string>
+  <string name="upload_button">Upload</string>
+  <string name="upload_caption">Caption</string>
+  <string name="upload_error">Couldn\'t upload a screenshot.</string>
+  <string name="upload_error_eresult">Couldn\'t log in to Steam. It\'s possible that your login key has expired. Try to remove your account in your device settings and add it again. Your screenshots will not be deleted.</string>
+  <plurals name="upload_header">
+    <item quantity="one">%1$d screenshot (%2$s) of %3$s to be uploaded.</item>
+    <item quantity="other">%1$d screenshots (%2$s) of %3$s to be uploaded.</item>
+  </plurals>
+  <string name="upload_label">Upload</string>
+  <string name="upload_location">In-game location</string>
+  <string name="upload_logout">Log out from Steam on Windows, OS X and Linux before uploading.\nDo not relogin until the upload is finished, or it will be terminated.</string>
+  <string name="upload_progress">Uploading screenshots</string>
+  <plurals name="upload_size_bytes">
+    <item quantity="other">%1$dB</item>
+  </plurals>
+  <plurals name="upload_size_kilobytes">
+    <item quantity="other">%1$dKB</item>
+  </plurals>
+  <plurals name="upload_size_megabytes">
+    <item quantity="other">%1$dMB</item>
+  </plurals>
+  <plurals name="upload_size_gigabytes">
+    <item quantity="other">%1$dGB</item>
+  </plurals>
+  <string name="upload_spoiler">Potential spoiler</string>
+  <string name="upload_uploading">Uploading…</string>
+  <string name="upload_visibility">Visibility</string>
+  <string-array name="upload_visibility">
+    <item>Public</item>
+    <item>Friends only</item>
+    <item>Private</item>
+  </string-array>
+
+</resources>

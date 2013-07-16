@@ -1,0 +1,20 @@
+syntax = "proto2";
+package com.steamcommunity.siplus.steamscreenshots.proto;
+
+message HeaderProto {
+	optional fixed64 steamID = 1;
+	optional int32 clientSessionID = 2;
+	optional uint32 routingAppID = 3;
+	optional fixed64 jobIDSource = 10 [default = 18446744073709551615];
+	optional fixed64 jobIDTarget = 11 [default = 18446744073709551615];
+	optional string targetJobName = 12;
+	optional int32 eresult = 13 [default = 2];
+	optional string errorMessage = 14;
+	optional uint32 ip = 15;
+	optional uint32 authAccountFlags = 16;
+	optional int32 transportError = 17 [default = 1];
+	optional uint64 messageID = 18 [default = 18446744073709551615];
+	optional uint32 publisherGroupID = 19;
+	optional uint32 sysID = 20;
+	optional uint64 traceTag = 21;
+}

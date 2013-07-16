@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">Ожидание завершения предыдущего действия…</string>
+  <string name="cancelling_title">Завершение</string>
+  <string name="delete_cancel">Отмена</string>
+  <string name="delete_ok">ОК</string>
+  <string name="error">Ошибка</string>
+  <string name="error_connection">Не удалось подключиться к серверам Steam. Проверьте подключение по мобильной сети или Wi-Fi.</string>
+  <string name="error_elsewhere">Ваш аккаунт сейчас используется в другом месте. Выйдите из Steam на других ваших устройствах.</string>
+  <string name="error_unconnected">Вы не подключены. Подключитесь к Интернету по мобильной сети или Wi-Fi.</string>
+  <string name="login_add_account">Имя аккаунта</string>
+  <string name="login_add_button">Добавить аккаунт</string>
+  <string name="login_add_error">Не удалось добавить аккаунт.</string>
+  <string name="login_add_error_disabled">Ваш аккаунт отключен службой поддержки Steam.</string>
+  <string name="login_add_error_exists">Аккаунт уже присутствует на этом устройстве. Удалите аккаунт в настройках вашего устройства, если вы хотите обновить пароль. Ваши скриншоты не будут удалены.</string>
+  <string name="login_add_error_guard_code">Неверный код безопасности.</string>
+  <string name="login_add_error_password">Неправильное имя аккаунта или пароль.</string>
+  <string name="login_add_guard_code">Код безопасности</string>
+  <string name="login_add_guard_info">На ваш адрес электронной почты, расположенный на %1$s, был отправлен код безопасности.\nВведите этот код ниже, чтобы войти.\n\nПроверьте папку со спамом, если вы не можете найти сообщение.\nЕсли сообщение найти не удалось, обратитесь в службу поддержки Steam.</string>
+  <string name="login_add_guard_name">Имя устройства (от 6 знаков)</string>
+  <string name="login_add_info">Введите данные вашего аккаунта Steam.\nВы будете отключены на других ваших устройствах.</string>
+  <string name="login_add_label">Добавить аккаунт</string>
+  <string name="login_add_password">Пароль</string>
+  <string name="login_add_privacy">Данные вашего аккаунта будут отправлены только на серверы Steam. На этом устройстве будет сохранён ключ для входа, а не пароль, и вы сможете удалить аккаунт в настройках вашего устройства (ваши скриншоты не будут удалены).</string>
+  <string name="login_add_progress">Получение данных аккаунта</string>
+  <string name="login_select_action_add">Добавить аккаунт</string>
+  <string name="login_select_corrupted">Этот аккаунт повреждён. Удалите его в настройках вашего устройства. Ваши скриншоты не будут удалены.</string>
+  <string name="login_select_info">Нажмите кнопку «Добавить аккаунт» на панели действий, чтобы начать.</string>
+  <string name="login_select_label">Выберите ваш аккаунт</string>
+  <string name="notification_failure">Не удалось снять скриншот Steam.</string>
+  <string name="notification_failure_info">Не удалось снять скриншот %1$s.</string>
+  <string name="notification_success">Скриншот Steam снят.</string>
+  <string name="notification_success_info">Снят скриншот %1$s.</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">Зажмите Тише + Питание для скриншота.</string>
+  <string name="preview_delete">Удалить скриншот с этого устройства?</string>
+  <string name="preview_fail">Не удалось открыть скриншот %1$d/%2$s/%3$s.</string>
+  <string name="screenshots_action_delete">Удалить с устройства</string>
+  <string name="screenshots_action_share">Поделиться</string>
+  <string name="screenshots_action_share_gallery">Поделиться галереей</string>
+  <string name="screenshots_action_upload">Загрузить</string>
+  <string name="screenshots_action_view">Просмотреть в Сообществе</string>
+  <string name="screenshots_action_view_gallery">Просмотреть галерею в Сообществе</string>
+  <string name="screenshots_games_empty">У вас нет скриншотов.\n\nСнимайте скриншоты, зажимая Тише + Питание во время игры.\n\nВысококачественные копии скриншотов будут сохранены в папке скриншотов вашего устройства.</string>
+  <string name="screenshots_images_contentdescription">Скриншот</string>
+  <string name="screenshots_images_delete">Удалить выбранный скриншот с этого устройства?</string>
+  <string name="screenshots_images_delete_single">Удалить выбранные скриншоты с этого устройства?</string>
+  <string name="screenshots_images_select">Выберите игру слева.</string>
+  <string name="screenshots_images_uploaded">Загружен</string>
+  <string name="upload_button">Загрузить</string>
+  <string name="upload_caption">Заголовок</string>
+  <string name="upload_error">Не удалось загрузить скриншот.</string>
+  <string name="upload_error_eresult">Не удалось войти в Steam. Возможно, ваш ключ для входа устарел. Попробуйте удалить аккаунт в настройках вашего устройства и добавить его снова. Ваши скриншоты не будут удалены.</string>
+  <plurals name="upload_header">
+    <item quantity="one">%1$d скриншот (%2$s) %3$s будет загружен.</item>
+    <item quantity="two">%1$d скриншота (%2$s) %3$s будут загружены.</item>
+    <item quantity="few">%1$d скриншота (%2$s) %3$s будут загружены.</item>
+    <item quantity="other">%1$d скриншотов (%2$s) %3$s будут загружены.</item>
+  </plurals>
+  <string name="upload_label">Загрузить</string>
+  <string name="upload_location">Место в игре</string>
+  <string name="upload_logout">Выйдите из Steam на Windows, OS X и Linux перед загрузкой.\nНе входите заново, пока загрузка не закончится, или она будет остановлена.</string>
+  <string name="upload_progress">Загрузка скриншотов</string>
+  <plurals name="upload_size_bytes">
+    <item quantity="other">%1$d Б</item>
+  </plurals>
+  <plurals name="upload_size_kilobytes">
+    <item quantity="other">%1$d КБ</item>
+  </plurals>
+  <plurals name="upload_size_megabytes">
+    <item quantity="other">%1$d МБ</item>
+  </plurals>
+  <plurals name="upload_size_gigabytes">
+    <item quantity="other">%1$d ГБ</item>
+  </plurals>
+  <string name="upload_spoiler">Возможно спойлер</string>
+  <string name="upload_uploading">Загрузка…</string>
+  <string name="upload_visibility">Видимость</string>
+  <string-array name="upload_visibility">
+    <item>Для всех</item>
+    <item>Для друзей</item>
+    <item>Только для меня</item>
+  </string-array>
+
+</resources>

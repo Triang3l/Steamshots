@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="grid_screenshot_size">150dp</dimen>
+  <dimen name="grid_screenshot_size_padded">158dp</dimen>
+  <dimen name="view_margin_narrow">96dp</dimen>
+  <dimen name="view_margin_narrow_outer">80dp</dimen>
+
+</resources>

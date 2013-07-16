@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+
+  <com.steamcommunity.siplus.steamscreenshots.TouchImageView
+    android:id="@+id/preview_screenshot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <LinearLayout
+    android:id="@+id/preview_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#7f000000"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <TextView
+      android:id="@+id/preview_time"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+      android:id="@+id/preview_caption"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textAppearance="?android:attr/textAppearanceSmall" />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/preview_fail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:text="@string/preview_fail"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</FrameLayout>

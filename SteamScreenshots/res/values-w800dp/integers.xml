@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <integer name="screenshots_games_weight">1</integer>
+  <integer name="screenshots_images_weight">2</integer>
+
+</resources>

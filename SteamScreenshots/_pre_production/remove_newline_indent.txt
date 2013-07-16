@@ -1,0 +1,4 @@
+Find what: \r\n[\t ]+\r\n
+Replace with: \r\n\r\n
+Filters: *.java *.xml
+Directories: src, res

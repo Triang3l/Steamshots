@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:baselineAligned="false"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ScreenshotsActivity" >
+
+  <FrameLayout
+    android:id="@+id/view_screenshots_fragment_games"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="@integer/screenshots_games_weight" />
+
+  <FrameLayout
+    android:id="@+id/view_screenshots_fragment_images"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="@integer/screenshots_images_weight" />
+
+</LinearLayout>

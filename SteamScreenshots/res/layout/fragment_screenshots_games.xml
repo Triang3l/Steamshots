@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+
+  <ListView
+  android:id="@+id/fragment_screenshots_games_list"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:divider="@null"
+  android:dividerHeight="0dp"
+  tools:listitem="@layout/list_imagetext" />
+
+  <TextView
+  android:id="@+id/fragment_screenshots_games_empty"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="16dp"
+  android:gravity="center"
+  android:text="@string/screenshots_games_empty"
+  android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</FrameLayout>

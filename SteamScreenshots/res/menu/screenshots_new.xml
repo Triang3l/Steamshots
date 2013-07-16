@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  <item
+    android:id="@+id/action_screenshots_new_upload"
+    android:icon="@android:drawable/ic_menu_upload"
+    android:showAsAction="always|withText"
+    android:title="@string/screenshots_action_upload" />
+
+  <item
+    android:id="@+id/action_screenshots_new_delete"
+    android:icon="@android:drawable/ic_menu_delete"
+    android:showAsAction="always"
+    android:title="@string/screenshots_action_delete" />
+
+</menu>

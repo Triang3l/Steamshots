@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="4dp" >
+
+  <ImageView
+    android:id="@+id/grid_screenshot_image"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_screenshot_size"
+    android:background="@android:color/darker_gray"
+    android:contentDescription="@string/screenshots_images_contentdescription"
+    android:scaleType="centerCrop" />
+
+  <View
+    android:id="@+id/grid_screenshot_selected"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_screenshot_size"
+    android:alpha="?android:attr/disabledAlpha"
+    android:background="@android:color/holo_blue_dark"
+    android:visibility="gone" />
+
+  <FrameLayout
+    android:id="@+id/grid_screenshot_uploaded"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#7f000000"
+    android:padding="8dp" >
+
+    <ImageView
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:contentDescription="@string/screenshots_images_uploaded"
+      android:src="@android:drawable/ic_menu_upload" />
+
+  </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,82 @@
+syntax = "proto2";
+package com.steamcommunity.siplus.steamscreenshots.proto;
+
+message ClientLogonResponseProto {
+	optional int32 eresult = 1 [default = 2];
+	optional int32 outOfGameHeartbeatSeconds = 2;
+	optional int32 inGameHeartbeatSeconds = 3;
+	optional uint32 publicIP = 4;
+	optional fixed32 timeServerTime = 5;
+	optional uint32 accountFlags = 6;
+	optional uint32 cellID = 7;
+	optional string emailDomain = 8;
+	optional bytes steam2Ticket = 9;
+	optional int32 eresultExtended = 10;
+	optional string webapiAuthenticateUserNonce = 11;
+	optional uint32 cellIDPingThreshold = 12;
+	optional bool usePics = 13;
+	optional string vanityURL = 14;
+	optional fixed64 clientSuppliedSteamID = 20;
+	optional string ipCountryCode = 21;
+	optional bytes parentalSettings = 22;
+	optional bytes parentalSettingSignature = 23;
+}
+
+message ClientNewLoginKeyProto {
+	optional uint32 uniqueID = 1;
+	optional string loginKey = 2;
+}
+
+message ClientServerListProto {
+	message ClientServerListProtoServer {
+		optional uint32 serverType = 1;
+		optional uint32 serverIP = 2;
+		optional uint32 serverPort = 3;
+	}
+	repeated ClientServerListProtoServer servers = 1;
+}
+
+message ClientSessionTokenProto {
+	optional uint64 token = 1;
+}
+
+message ClientUCMAddScreenshotResponseProto {
+	optional int32 eresult = 1 [default = 2];
+	optional fixed64 screenshotID = 2 [default = 18446744073709551615];
+}
+
+message ClientUFSLoginResponseProto {
+	optional int32 eresult = 1 [default = 2];
+}
+
+message ClientUFSUploadFileFinishedProto {
+	optional int32 eresult = 1 [default = 2];
+	optional bytes shaFile = 2;
+}
+
+message ClientUFSUploadFileResponseProto {
+	optional int32 eresult = 1 [default = 2];
+	optional bytes shaFile = 2;
+	optional bool useHTTP = 3;
+	optional string httpHost = 4;
+	optional string httpURL = 5;
+	optional bytes kvHeaders = 6;
+	optional bool useHTTPS = 7;
+	optional bool encryptFile = 8;
+}
+
+message ClientUpdateMachineAuthProto {
+	optional string filename = 1;
+	optional uint32 offset = 2;
+	optional uint32 cubToWrite = 3;
+	optional bytes file = 4;
+	optional uint32 otpType = 5;
+	optional string otpIdentifier = 6;
+	optional bytes otpSharedSecret = 7;
+	optional uint32 otpTimedrift = 8;
+}
+
+message MultiProto {
+	optional uint32 sizeUnzipped = 1;
+	optional bytes messageBody = 2;
+}
