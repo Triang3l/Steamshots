@@ -1,86 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<<<<<<< HEAD
-  <string name="app_name">Steamshots</string>
-  <string name="cancelling_message">In attesa del termine dell\'azione precedente…</string>
-  <string name="cancelling_title">In termine</string>
-  <string name="delete_cancel">Annulla</string>
-  <string name="delete_ok">OK</string>
-  <string name="error">Errore</string>
-  <string name="error_connection">Impossibile connettersi ai server di Steam. Controlla la tua connessione dati o Wi-Fi.</string>
-  <string name="error_elsewhere">Hai effettuato l\'accesso da qualche altra parte. Esci da Steam dai tuoi altri dispositivi.</string>
-  <string name="error_unconnected">Non sei connesso. Attiva la connessione dati o Wi-Fi.</string>
-  <string name="login_add_account">Nome dell'account</string>
-  <string name="login_add_button">Aggiungi account</string>
-  <string name="login_add_error">Impossibile aggiungere l\'account.</string>
-  <string name="login_add_error_disabled">Il tuo account è stato sospeso dall\'Assistenza di Steam.</string>
-  <string name="login_add_error_exists">L\'account esiste già in questo dispositivo. Rimuovi l\'account dalle impostazioni del dispositivo se desideri aggiornare la tua password. I tuoi screenshot non saranno eliminati.</string>
-  <string name="login_add_error_guard_code">Codice di sicurezza non valido.</string>
-  <string name="login_add_error_password">Nome dell\'account o password non validi.</string>
-  <string name="login_add_guard_code">Codice di sicurezza/string>
-  <string name="login_add_guard_info">È stato inviato un codice di sicurezza all\'indirizzo email associato al tuo account a %1$s.\nInserisci il codice in basso per effettuare l\'accesso.\n\nControlla la tua cartella dello spam se non riesci a trovarlo in quella della posta in arrivo.\nSe non riesci a trovare il messaggio, contatta l\'Assistenza di Steam.</string>
-  <string name="login_add_guard_name">Nome del dispositivo (min. 6 caratteri)</string>
-  <string name="login_add_info">Inserisci i dettagli del tuo account di Steam.\nSarai scollegato dai tuoi altri dispositivi.</string>
-  <string name="login_add_label">Aggiungi account</string>
-  <string name="login_add_password">Password</string>
-  <string name="login_add_privacy">I tuoi dati di accesso verranno inviati solamente ai server di Steam e da nessun\'altra parte. Su questo dispositivo, verrà memorizzata una chiave identificativa - non la tua password - e sarai in grado di rimuovere l\'account dalle impostazioni del dispositivo (i tuoi screenshot non saranno eliminati).</string>
-  <string name="login_add_progress">Acquisizione delle informazioni dell\'account</string>
-  <string name="login_select_action_add">Aggiungi account</string>
-  <string name="login_select_corrupted">Questo account è corrotto. Rimuovilo dalle impostazioni del tuo dispositivo. I tuoi screenshot non saranno eliminati.</string>
-  <string name="login_select_info">Premi il pulsante "Aggiungi account" nella barra delle azioni per iniziare.</string>
-  <string name="login_select_label">Seleziona il tuo account</string>
-  <string name="notification_failure">Impossibile scattare uno screenshot di Steam.</string>
-  <string name="notification_failure_info">Impossibile scattare %1$s screenshot.</string>
-  <string name="notification_success">Screenshot di Steam scattato.</string>
-  <string name="notification_success_info">%1$s screenshot scattati.</string>
-  <string name="notification_take">Steamshots - %1$s</string>
-  <string name="notification_take_info">Tieni premuti i tasti degli screenshot per scattarne uno.</string>
-  <string name="preview_delete">Eliminare questo screenshot da questo dispositivo?</string>
-  <string name="preview_fail">Impossibile caricare lo screenshot %1$d/%2$s/%3$s.</string>
-  <string name="screenshots_action_delete">Elimina localmente</string>
-  <string name="screenshots_action_share">Condividi</string>
-  <string name="screenshots_action_share_gallery">Condividi la galleria online</string>
-  <string name="screenshots_action_upload">Carica</string>
-  <string name="screenshots_action_view">Visualizza online</string>
-  <string name="screenshots_action_view_gallery">Visualizza la galleria online</string>
-  <string name="screenshots_games_empty">Non hai scattato nessuno screenshot.\n\nScatta uno screenshot tenendo premuti i tasti degli screenshot del tuo dispositivo (di solito la combinazione Volume Down + Power) mentre esegui un gioco.\n\nUna copia non compressa dello screenshot verrà salvata nella cartella predefinita degli screenshot del tuo dispositivo.</string>
-  <string name="screenshots_images_contentdescription">Screenshot</string>
-  <string name="screenshots_images_delete">Eliminare gli screenshot selezionati da questo dispositivo?</string>
-  <string name="screenshots_images_delete_single">Eliminare lo screenshot selezionato da questo dispositivo?</string>
-  <string name="screenshots_images_select">Seleziona un gioco dalla sinistra.</string>
-  <string name="screenshots_images_uploaded">Caricati</string>
-  <string name="upload_button">Carica</string>
-  <string name="upload_caption">Didascalia</string>
-  <string name="upload_error">Impossibile caricare lo screenshot.</string>
-  <string name="upload_error_eresult">Impossibile effettuare l\'accesso su Steam. È possibile che la tua chiave identificativa sia scaduta. Prova a rimuovere il tuo account dalle impostazioni del dispositivo e a riaggiungerlo. I tuoi screenshot non saranno eliminati.</string>
-  <plurals name="upload_header">
-    <item quantity="one">%1$d screenshot (%2$s) su %3$s ancora da caricare.</item>
-    <item quantity="other">%1$d screenshot (%2$s) su %3$s ancora da caricare.</item>
-  </plurals>
-  <string name="upload_label">Carica</string>
-  <string name="upload_location">Luogo in gioco</string>
-  <string name="upload_progress">Caricamento dello screenshot</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$dB</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$dKB</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$dMB</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$dGB</item>
-  </plurals>
-  <string name="upload_spoiler">Potenziale spoiler</string>
-  <string name="upload_uploading">Caricamento</string>
-  <string name="upload_visibility">Visibilità</string>
-  <string-array name="upload_visibility">
-    <item>Pubblico</item>
-    <item>Solo amici</item>
-    <item>Privato</item>
-=======
   <string name="app_name">Steamshots</string>
   <string name="cancelling_message">Waiting for the previous action to finish…</string>
   <string name="cancelling_title">Finishing</string>
@@ -159,7 +79,6 @@
     <item>Public</item>
     <item>Friends only</item>
     <item>Private</item>
->>>>>>> parent of 6b85780... Italian Translation v0.1
   </string-array>
 
 </resources>
