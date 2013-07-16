@@ -52,7 +52,7 @@
   <string name="upload_button">Carica</string>
   <string name="upload_caption">Didascalia</string>
   <string name="upload_error">Impossibile caricare lo screenshot.</string>
-  <string name="upload_error_eresult">Impossibile effettuare l\'accesso su Steam. È possibile che la tua chiave identificativa sia scaduta. Prova a rimuovere il tuo account dalle impostazioni del dispositivo e a  riaggiungerlo. I tuoi screenshot non saranno eliminati.</string>
+  <string name="upload_error_eresult">Impossibile effettuare l\'accesso su Steam. È possibile che la tua chiave identificativa sia scaduta. Prova a rimuovere il tuo account dalle impostazioni del dispositivo e a riaggiungerlo. I tuoi screenshot non saranno eliminati.</string>
   <plurals name="upload_header">
     <item quantity="one">%1$d screenshot (%2$s) su %3$s ancora da caricare.</item>
     <item quantity="other">%1$d screenshot (%2$s) su %3$s ancora da caricare.</item>
