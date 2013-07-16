@@ -67,12 +67,6 @@
       android:layout_height="wrap_content"
       android:text="@string/upload_spoiler" />
 
-    <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/upload_logout"
-      android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <LinearLayout
       android:id="@+id/view_upload_error_frame"
       android:layout_width="match_parent"

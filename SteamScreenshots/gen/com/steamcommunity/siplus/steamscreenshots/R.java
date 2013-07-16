@@ -156,11 +156,10 @@ public final class R {
         public static final int upload_error_eresult=0x7f070033;
         public static final int upload_label=0x7f070034;
         public static final int upload_location=0x7f070035;
-        public static final int upload_logout=0x7f070036;
-        public static final int upload_progress=0x7f070037;
-        public static final int upload_spoiler=0x7f070038;
-        public static final int upload_uploading=0x7f070039;
-        public static final int upload_visibility=0x7f07003a;
+        public static final int upload_progress=0x7f070036;
+        public static final int upload_spoiler=0x7f070037;
+        public static final int upload_uploading=0x7f070038;
+        public static final int upload_visibility=0x7f070039;
     }
     public static final class xml {
         public static final int authenticator=0x7f040000;

@@ -72,12 +72,6 @@ public class Connection {
 	Socket mSocket;
 	long mSteamID = 0x110000100000000L;
 
-	void cloneSessionData(Incoming message) {
-		MessageHeader header = message.mHeader;
-		mSessionID = header.mSessionID;
-		mSteamID = header.mSteamID;
-	}
-
 	void connect(String dstName, int dstPort) throws ConnectionException {
 		if (mSocket != null) {
 			try {

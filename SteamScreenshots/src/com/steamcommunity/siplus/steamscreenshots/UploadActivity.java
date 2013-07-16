@@ -325,6 +325,7 @@ class UploadTask extends AsyncTaskWithRunID {
 		if (isCancelled()) {return false;}
 		mCM = cm;
 		SteamshotsAccount account = mAccount;
+		cm.mSteamID = (account.mSteamID & 0x7ff00000ffffffffL) | 0x200000000L;
 		try {
 			cm.sendMessage(new ClientLogonOutgoing(account.mName, account.mLoginKey, account.mGuardHash));
 		} catch (OutgoingException e) {
@@ -351,7 +352,7 @@ class UploadTask extends AsyncTaskWithRunID {
 				mError = R.string.upload_error_eresult;
 				return false;
 			}
-			cm.cloneSessionData(logonResponse);
+			cm.mSessionID = logonResponse.mHeader.mSessionID;
 			ClientSessionTokenIncoming sessionTokenIncoming = new ClientSessionTokenIncoming(
 				cm.waitForMessage(ClientSessionTokenIncoming.MESSAGE));
 			if (isCancelled()) {return false;}
@@ -399,7 +400,7 @@ class UploadTask extends AsyncTaskWithRunID {
 			ClientUFSLoginResponseIncoming ufsLoginResponse = new ClientUFSLoginResponseIncoming(
 				ufs.waitForMessage(ClientUFSLoginResponseIncoming.MESSAGE));
 			if (isCancelled()) {return false;}
-			ufs.cloneSessionData(ufsLoginResponse);
+			ufs.mSessionID = ufsLoginResponse.mHeader.mSessionID;
 			if (ufsLoginResponse.mEResult == EResult.OK) {
 				return true;
 			}

@@ -392,7 +392,9 @@ class LoginAddTask extends AsyncTaskWithRunID {
 				return false;
 			}
 			publishProgress(++mStages);
-			connection.cloneSessionData(mLogonResponse);
+			MessageHeader header = mLogonResponse.mHeader;
+			connection.mSessionID = header.mSessionID;
+			connection.mSteamID = header.mSteamID;
 			connection.mHeartbeatWhenWaiting = true;
 			if (mNeedGuard) {
 				if (isCancelled()) {return false;}
