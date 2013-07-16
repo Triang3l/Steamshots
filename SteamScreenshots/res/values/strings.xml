@@ -76,7 +76,7 @@
   <string name="upload_uploading">Caricamento</string>
   <string name="upload_visibility">Visibilità</string>
   <string-array name="upload_visibility">
-    <item>Publico</item>
+    <item>Pubblico</item>
     <item>Solo amici</item>
     <item>Privato</item>
   </string-array>
