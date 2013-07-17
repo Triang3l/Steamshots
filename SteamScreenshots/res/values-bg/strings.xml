@@ -7,9 +7,9 @@
   <string name="delete_cancel">Отказ</string>
   <string name="delete_ok">Добре</string>
   <string name="error">Грешка</string>
-  <string name="error_connection">Неуспешна връзка със Steam мрежата. Проверете Вашите данни или Wi-Fi връзка.</string>
-  <string name="error_elsewhere">Вие сте влезли от другаде. Излезте от Steam на другото Ви устройство.</string>
-  <string name="error_unconnected">Не сте свързвани. Включете данни или Wi-Fi връзка.</string>
+  <string name="error_connection">Неуспешна връзка със Steam мрежата. Проверете Вашата връзка за данни или Wi-Fi.</string>
+  <string name="error_elsewhere">Вие сте влезли от другаде. Излезте от Steam от другото Ви устройство.</string>
+  <string name="error_unconnected">Не сте свързвани. Включете връзка за данни или Wi-Fi.</string>
   <string name="login_add_account">Име на акаунта</string>
   <string name="login_add_button">Добави акаунт</string>
   <string name="login_add_error">Неуспешно добавяне на акаунт.</string>
@@ -34,7 +34,7 @@
   <string name="notification_success">Steam снимка е направена.</string>
   <string name="notification_success_info">%1$s снимка е направена.</string>
   <string name="notification_take">Steamshots - %1$s</string>
-  <string name="notification_take_info">Задръжте клавиша „снимка“ за направите снимка.</string>
+  <string name="notification_take_info">Задръжте комбинацията за снимка за да направите снимка.</string>
   <string name="preview_delete">Изтриване на снимка от това устройство?</string>
   <string name="preview_fail">Неуспешно зареждане на снимка %1$d/%2$s/%3$s.</string>
   <string name="screenshots_action_delete">Локално изтриване</string>
@@ -43,7 +43,7 @@
   <string name="screenshots_action_upload">Качване</string>
   <string name="screenshots_action_view">Виж онлайн</string>
   <string name="screenshots_action_view_gallery">Виж галерията онлайн</string>
-  <string name="screenshots_games_empty">Вие нямата снимки.\n\nНаправте снимки задържайки бутона за снимка на Вашето устройство (обикновено бутона за включване или контрол на звука) докато играете.\n\nНекопресирано копие на снимката ще бъде запазено в основната папка за снимки.</string>
+  <string name="screenshots_games_empty">Вие нямата снимки.\n\nНаправте снимки задържайки комбинацията за снимка на Вашето устройство (обикновено бутона за включване или контрол на звука) докато играете.\n\nНекопресирано копие на снимката ще бъде запазено в основната папка за снимки.</string>
   <string name="screenshots_images_contentdescription">Снимка</string>
   <string name="screenshots_images_delete">Изтриване на избраните снимки от това устройство?</string>
   <string name="screenshots_images_delete_single">Изтриване на избраната снимка от това устройство?</string>
