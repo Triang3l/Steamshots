@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">Изчакване да завърши предишното действие…</string>
+  <string name="cancelling_title">Завършване</string>
+  <string name="delete_cancel">Отказ</string>
+  <string name="delete_ok">Добре</string>
+  <string name="error">Грешка</string>
+  <string name="error_connection">Неуспешна връзка със Steam мрежата. Проверете Вашите данни или Wi-Fi връзка.</string>
+  <string name="error_elsewhere">Вие сте влезли от другаде. Излезте от Steam на другото Ви устройство.</string>
+  <string name="error_unconnected">Не сте свързвани. Включете данни или Wi-Fi връзка.</string>
+  <string name="login_add_account">Име на акаунта</string>
+  <string name="login_add_button">Добави акаунт</string>
+  <string name="login_add_error">Неуспешно добавяне на акаунт.</string>
+  <string name="login_add_error_disabled">Вашият акаунт е преустановен от Steam поддръжката.</string>
+  <string name="login_add_error_exists">Акаунтът вече съществува на това устройство. Изрийте акаунтът в настройките на устройството ако искате да опресните Вашата парола. Снимките Ви няма да бъдат изтрити.</string>
+  <string name="login_add_error_guard_code">Невалиден защитен код.</string>
+  <string name="login_add_error_password">Невалидно име на акаунта или парола.</string>
+  <string name="login_add_guard_code">Защитен код</string>
+  <string name="login_add_guard_info">Защитен код беше пратен на пощата асоциирана към Вашият акаунт а именно: %1$s.\nВкарайте кодът по долу за да влезете.\n\nПроверете спам директорията в случай, че не можете да намерите писмото.\nАко не го намерите се свържете със Steam поддръжката.</string>
+  <string name="login_add_guard_name">Име на устройството (мин. 6 знака)</string>
+  <string name="login_add_info">Въведете Вашите Steam детайли.\nВие ще бъдете изключен от другите Ви устройства.</string>
+  <string name="login_add_label">Добави акаунт</string>
+  <string name="login_add_password">Парола</string>
+  <string name="login_add_privacy">Вашите детайли ще бъдат пратени само до Steam мрежата и никъде другаде. На това устройство, ще бъде запазен ключ, който не е вашата парола и ще можете да изтриете акаунта през настройките на устройството (вашите снимки няма да бъдат изтрити).</string>
+  <string name="login_add_progress">Установяване информацията на акаунтът</string>
+  <string name="login_select_action_add">Добави акаунт</string>
+  <string name="login_select_corrupted">Този акаунт е повреден. Изрите го от настройките на Вашето устройство. Снимките Ви няма да бъдат изтрити.</string>
+  <string name="login_select_info">Натиснете „Добави акаунт“ бутонът от лентата за да започнете.</string>
+  <string name="login_select_label">Изберете своя акаунт</string>
+  <string name="notification_failure">Неуспешно заснемане на Steam снимка.</string>
+  <string name="notification_failure_info">Не беше направена снимка %1$s</string>
+  <string name="notification_success">Steam снимка е направена.</string>
+  <string name="notification_success_info">%1$s снимка е направена.</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">Задръжте клавиша „снимка“ за направите снимка.</string>
+  <string name="preview_delete">Изтриване на снимка от това устройство?</string>
+  <string name="preview_fail">Неуспешно зареждане на снимка %1$d/%2$s/%3$s.</string>
+  <string name="screenshots_action_delete">Локално изтриване</string>
+  <string name="screenshots_action_share">Споделяне</string>
+  <string name="screenshots_action_share_gallery">Сподели в онлайн галерията</string>
+  <string name="screenshots_action_upload">Качване</string>
+  <string name="screenshots_action_view">Виж онлайн</string>
+  <string name="screenshots_action_view_gallery">Виж галерията онлайн</string>
+  <string name="screenshots_games_empty">Вие нямата снимки.\n\nНаправте снимки задържайки бутона за снимка на Вашето устройство (обикновено бутона за включване или контрол на звука) докато играете.\n\nНекопресирано копие на снимката ще бъде запазено в основната папка за снимки.</string>
+  <string name="screenshots_images_contentdescription">Снимка</string>
+  <string name="screenshots_images_delete">Изтриване на избраните снимки от това устройство?</string>
+  <string name="screenshots_images_delete_single">Изтриване на избраната снимка от това устройство?</string>
+  <string name="screenshots_images_select">Избиране на игра от листът в ляво.</string>
+  <string name="screenshots_images_uploaded">Качени</string>
+  <string name="upload_button">Качване</string>
+  <string name="upload_caption">Пояснение</string>
+  <string name="upload_error">Снимката не беше качена</string>
+  <string name="upload_error_eresult">Неуспешно влизане в Steam. Възможно е Вашият ключ да е изтекъл. Пробвайте да изтриете акаунтът настройките на устройството и да го добавите отново. Вашите снимки няма да бъдат изтрити.</string>
+  <plurals name="upload_header">
+    <item quantity="one">%1$d снимка (%2$s) от %3$s да бъде качена.</item>
+    <item quantity="other">%1$d снимки (%2$s) от %3$s да бъдат качени.</item>
+  </plurals>
+  <string name="upload_label">Качване</string>
+  <string name="upload_location">Местоположение в играта</string>
+  <string name="upload_progress">Качване на снимки</string>
+  <plurals name="upload_size_bytes">
+    <item quantity="other">%1$dB</item>
+  </plurals>
+  <plurals name="upload_size_kilobytes">
+    <item quantity="other">%1$dKB</item>
+  </plurals>
+  <plurals name="upload_size_megabytes">
+    <item quantity="other">%1$dMB</item>
+  </plurals>
+  <plurals name="upload_size_gigabytes">
+    <item quantity="other">%1$dGB</item>
+  </plurals>
+  <string name="upload_spoiler">Потенциален спойлер</string>
+  <string name="upload_uploading">Качване…</string>
+  <string name="upload_visibility">Видимост</string>
+  <string-array name="upload_visibility">
+    <item>Публичен</item>
+    <item>Само приятели </item>
+    <item>Личен</item>
+  </string-array>
+</resources>
