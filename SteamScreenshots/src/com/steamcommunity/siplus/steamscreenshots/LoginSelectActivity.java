@@ -161,6 +161,8 @@ public final class LoginSelectActivity extends Activity {
 		mAccountManager = AccountManager.get(this);
 		mDefaultAvatar = getResources().getDrawable(R.drawable.avatar);
 
+		setTitle(R.string.login_select_label);
+
 		setContentView(R.layout.view_login_select);
 		widgetEmpty = (LinearLayout)(findViewById(R.id.view_login_select_empty));
 		widgetList = (ListView)(findViewById(R.id.view_login_select_list));

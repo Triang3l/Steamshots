@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Capturas</string>
+  <string name="cancelling_message">Esperando a que una acción previa finalice…</string>
+  <string name="cancelling_title">Finalizando</string>
+  <string name="delete_cancel">Cancelar</string>
+  <string name="delete_ok">OK</string>
+  <string name="error">Error</string>
+  <string name="error_connection">No se ha podido conectar con los servidores de Steam. Comprueba tu conexión.</string>
+  <string name="error_elsewhere">Has iniciado sesión en otro dispositivo. Cierrala antes de continuar.</string>
+  <string name="error_unconnected">No estás conectado. Activa tu conexión de datos o Wi-Fi.</string>
+  <string name="login_add_account">Nombre de la cuenta</string>
+  <string name="login_add_button">Añadir cuenta</string>
+  <string name="login_add_error">No se pudo añadir.</string>
+  <string name="login_add_error_disabled">Tu cuenta ha sido suspendida por el Soporte de Steam.</string>
+  <string name="login_add_error_exists">La cuenta ya existe en este dispositivo. Elimina la cuenta del dispositivo si deseas cambiar la contraseña. Tus capturas no serán borradas.</string>
+  <string name="login_add_error_guard_code">Codigo de seguridad incorrecto.</string>
+  <string name="login_add_error_password">Nombre o contraseña invalidos.</string>
+  <string name="login_add_guard_code">Codigo de seguridad</string>
+  <string name="login_add_guard_info">Un codigo de seguridad ha siedo enviado a tu email %1$s.\nIntroducelo para empezar.\n\nComprueba tu carpeta de spam.\nSi no puedes encontrarlo contacta con el Soporte de Steam.</string>
+  <string name="login_add_guard_name">Nombre del dispositivo</string>
+  <string name="login_add_info">Introduce tu información de Steam.\nSerás desconectado de otros dispositivos.</string>
+  <string name="login_add_label">Añadir cuenta</string>
+  <string name="login_add_password">Contraseña</string>
+  <string name="login_add_privacy">Tus datos de Steam solo serán enviados a los servidores de Steam, a ningún sitio mas. En este dispositivo, una clave - no tu contraseña - será almacenada, y tú podras eliminar dicha cuenta desde el penal de configuracion (tus capturas no serán eliminadas).</string>
+  <string name="login_add_progress">Obteniendo info. de cuenta</string>
+  <string name="login_select_action_add">Añadir cuenta</string>
+  <string name="login_select_corrupted">Esta cuenta está dañada. Eliminala del dispositivo. Tus capturas no serán borradas.</string>
+  <string name="login_select_info">Pulsa "Añadir cuenta" en la barra de acción para empezar.</string>
+  <string name="login_select_label">Selecciona tu cuenta</string>
+  <string name="notification_failure">No se pudo tomar una captura de Steam.</string>
+  <string name="notification_failure_info">No se pudo obtener %1$s capturas.</string>
+  <string name="notification_success">Capturas de Steam tomadas.</string>
+  <string name="notification_success_info">%1$s captura tomada.</string>
+  <string name="notification_take">Capturas - %1$s</string>
+  <string name="notification_take_info">Pulsa las teclas de captura.</string>
+  <string name="preview_delete">Eliminar capturas del dispositivo?</string>
+  <string name="preview_fail">No se pudo eliminar %1$d/%2$s/%3$s.</string>
+  <string name="screenshots_action_delete">Eliminar localmente</string>
+  <string name="screenshots_action_share">Compartir</string>
+  <string name="screenshots_action_share_gallery">Comprartir galería online</string>
+  <string name="screenshots_action_upload">Subir</string>
+  <string name="screenshots_action_view">Ver online</string>
+  <string name="screenshots_action_view_gallery">Ver galeria online</string>
+  <string name="screenshots_games_empty">No tienes ninguna captura.\n\nToma una captura presionando los botones de captura (normalmente Bajar Volumen + Encender) mientras juegas.\n\nUna captura sin compresión será almacenada en el dispositivo.</string>
+  <string name="screenshots_images_contentdescription">Captura</string>
+  <string name="screenshots_images_delete">Eliminar capturas seleccionadas del dispositivo?</string>
+  <string name="screenshots_images_delete_single">Eliminar captura del dispositivo?</string>
+  <string name="screenshots_images_select">Seleciona un juego.</string>
+  <string name="screenshots_images_uploaded">Subidas</string>
+  <string name="upload_button">Subir</string>
+  <string name="upload_caption">Leyenda</string>
+  <string name="upload_error">No se pudo subir la captura.</string>
+  <string name="upload_error_eresult">No se ha podido iniciar sesión. Es posible que la clave haya expirado. Intenta eleminar la cuenta y añadirla de nuevo. Tus capturas no se eliminarán.</string>
+  <plurals name="upload_header">
+    <item quantity="one">%1$d captura (%2$s) de %3$s por subir.</item>
+    <item quantity="other">%1$d capturas (%2$s) de %3$s por subir.</item>
+  </plurals>
+  <string name="upload_label">Subir</string>
+  <string name="upload_location">Localización</string>
+  <string name="upload_progress">Subiendo capturas</string>
+  <plurals name="upload_size_bytes">
+    <item quantity="other">%1$d B</item>
+  </plurals>
+  <plurals name="upload_size_kilobytes">
+    <item quantity="other">%1$d KB</item>
+  </plurals>
+  <plurals name="upload_size_megabytes">
+    <item quantity="other">%1$d MB</item>
+  </plurals>
+  <plurals name="upload_size_gigabytes">
+    <item quantity="other">%1$d GB</item>
+  </plurals>
+  <string name="upload_spoiler">Spoiler potencial</string>
+  <string name="upload_uploading">Subiendo…</string>
+  <string name="upload_visibility">Visibilidad</string>
+  <string-array name="upload_visibility">
+    <item>Publico</item>
+    <item>Solo amigos</item>
+    <item>Privado</item>
+  </string-array>
+
+</resources>
