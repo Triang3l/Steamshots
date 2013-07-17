@@ -19,7 +19,7 @@
   <string name="login_add_error_password">Invalid account name or password.</string>
   <string name="login_add_guard_code">Security code</string>
   <string name="login_add_guard_info">A security code was sent to the email address associated with your account at %1$s.\nEnter the code below to log in.\n\nCheck your spam folder if you can\'t find it in your inbox folder.\nIf you can\'t find the message, contact Steam Support.</string>
-  <string name="login_add_guard_name">Device name (min. 6 chars)</string>
+  <string name="login_add_guard_name">Device name</string>
   <string name="login_add_info">Enter your Steam login details.\nYou will be logged out on your other devices.</string>
   <string name="login_add_label">Add account</string>
   <string name="login_add_password">Password</string>

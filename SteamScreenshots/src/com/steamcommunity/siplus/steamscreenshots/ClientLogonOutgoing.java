@@ -22,7 +22,7 @@ public final class ClientLogonOutgoing extends Outgoing {
 		mPassword = password;
 		if (guardCode != null) {
 			mGuardCode = guardCode;
-			if (guardName.length() >= 6) {
+			if (guardName.length() != 0) {
 				mGuardName = guardName;
 			}
 		}

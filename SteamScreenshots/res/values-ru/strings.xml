@@ -19,7 +19,7 @@
   <string name="login_add_error_password">Неправильное имя аккаунта или пароль.</string>
   <string name="login_add_guard_code">Код безопасности</string>
   <string name="login_add_guard_info">На ваш адрес электронной почты, расположенный на %1$s, был отправлен код безопасности.\nВведите этот код ниже, чтобы войти.\n\nПроверьте папку со спамом, если вы не можете найти сообщение.\nЕсли сообщение найти не удалось, обратитесь в службу поддержки Steam.</string>
-  <string name="login_add_guard_name">Имя устройства (от 6 знаков)</string>
+  <string name="login_add_guard_name">Имя устройства</string>
   <string name="login_add_info">Введите данные вашего аккаунта Steam.\nВы будете отключены на других ваших устройствах.</string>
   <string name="login_add_label">Добавить аккаунт</string>
   <string name="login_add_password">Пароль</string>

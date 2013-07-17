@@ -19,7 +19,7 @@
   <string name="login_add_error_password">Nome dell\'account o password non validi.</string>
   <string name="login_add_guard_code">Codice di sicurezza</string>
   <string name="login_add_guard_info">È stato inviato un codice di sicurezza all\'indirizzo email associato al tuo account a %1$s.\nInserisci il codice in basso per effettuare l\'accesso.\n\nControlla la tua cartella dello spam se non riesci a trovarlo in quella della posta in arrivo.\nSe non riesci a trovare il messaggio, contatta l\'Assistenza di Steam.</string>
-  <string name="login_add_guard_name">Nome del dispos. (6+ caratteri)</string>
+  <string name="login_add_guard_name">Nome del dispositivo</string>
   <string name="login_add_info">Inserisci i dettagli del tuo account di Steam.\nSarai scollegato dai tuoi altri dispositivi.</string>
   <string name="login_add_label">Aggiungi account</string>
   <string name="login_add_password">Password</string>
