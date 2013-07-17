@@ -23,10 +23,10 @@
   <string name="login_add_info">Introduce tu información de Steam.\nSerás desconectado de otros dispositivos.</string>
   <string name="login_add_label">Añadir cuenta</string>
   <string name="login_add_password">Contraseña</string>
-  <string name="login_add_privacy">Tus datos de Steam solo serán enviados a los servidores de Steam, a ningún sitio mas. En este dispositivo, una clave - no tu contraseña - será almacenada, y tú podras eliminar dicha cuenta desde el penal de configuracion (tus capturas no serán eliminadas).</string>
+  <string name="login_add_privacy">Tus datos de Steam solo serán enviados a los servidores de Steam, a ningún sitio mas. En este dispositivo, una clave - no tu contraseña - será almacenada, y tú podras eliminar dicha cuenta desde el panel de configuración (tus capturas no serán eliminadas).</string>
   <string name="login_add_progress">Obteniendo info. de cuenta</string>
   <string name="login_select_action_add">Añadir cuenta</string>
-  <string name="login_select_corrupted">Esta cuenta está dañada. Eliminala del dispositivo. Tus capturas no serán borradas.</string>
+  <string name="login_select_corrupted">Esta cuenta está dañada. Elimínala del dispositivo. Tus capturas no serán borradas.</string>
   <string name="login_select_info">Pulsa "Añadir cuenta" en la barra de acción para empezar.</string>
   <string name="login_select_label">Selecciona tu cuenta</string>
   <string name="notification_failure">No se pudo tomar una captura de Steam.</string>
@@ -39,10 +39,10 @@
   <string name="preview_fail">No se pudo eliminar %1$d/%2$s/%3$s.</string>
   <string name="screenshots_action_delete">Eliminar localmente</string>
   <string name="screenshots_action_share">Compartir</string>
-  <string name="screenshots_action_share_gallery">Comprartir galería online</string>
+  <string name="screenshots_action_share_gallery">Compartir galería online</string>
   <string name="screenshots_action_upload">Subir</string>
   <string name="screenshots_action_view">Ver online</string>
-  <string name="screenshots_action_view_gallery">Ver galeria online</string>
+  <string name="screenshots_action_view_gallery">Ver galería online</string>
   <string name="screenshots_games_empty">No tienes ninguna captura.\n\nToma una captura presionando los botones de captura (normalmente Bajar Volumen + Encender) mientras juegas.\n\nUna captura sin compresión será almacenada en el dispositivo.</string>
   <string name="screenshots_images_contentdescription">Captura</string>
   <string name="screenshots_images_delete">Eliminar capturas seleccionadas del dispositivo?</string>
@@ -52,7 +52,7 @@
   <string name="upload_button">Subir</string>
   <string name="upload_caption">Leyenda</string>
   <string name="upload_error">No se pudo subir la captura.</string>
-  <string name="upload_error_eresult">No se ha podido iniciar sesión. Es posible que la clave haya expirado. Intenta eleminar la cuenta y añadirla de nuevo. Tus capturas no se eliminarán.</string>
+  <string name="upload_error_eresult">No se ha podido iniciar sesión. Es posible que la clave haya expirado. Intenta eliminar la cuenta y añadirla de nuevo. Tus capturas no se eliminarán.</string>
   <plurals name="upload_header">
     <item quantity="one">%1$d captura (%2$s) de %3$s por subir.</item>
     <item quantity="other">%1$d capturas (%2$s) de %3$s por subir.</item>
@@ -72,11 +72,11 @@
   <plurals name="upload_size_gigabytes">
     <item quantity="other">%1$d GB</item>
   </plurals>
-  <string name="upload_spoiler">Spoiler potencial</string>
+  <string name="upload_spoiler">Posible spoiler</string>
   <string name="upload_uploading">Subiendo…</string>
   <string name="upload_visibility">Visibilidad</string>
   <string-array name="upload_visibility">
-    <item>Publico</item>
+    <item>Público</item>
     <item>Solo amigos</item>
     <item>Privado</item>
   </string-array>
