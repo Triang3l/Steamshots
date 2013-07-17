@@ -58,7 +58,7 @@
 	<item quantity="other">A enviar: %1$d capturas de ecrã (%2$s) de %3$s.</item>
   </plurals>
   <string name="upload_label">Enviar</string>
-  <string name="upload_location">Localização no jogo:</string>
+  <string name="upload_location">Localização no jogo</string>
   <string name="upload_progress">A enviar capturas de ecrã</string>
   <plurals name="upload_size_bytes">
 	<item quantity="other">%1$d b</item>

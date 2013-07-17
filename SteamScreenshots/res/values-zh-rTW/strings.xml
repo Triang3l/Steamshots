@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">正在等待上一個動作結束…</string>
+  <string name="cancelling_title">結束中</string>
+  <string name="delete_cancel">取消</string>
+  <string name="delete_ok">確定</string>
+  <string name="error">錯誤</string>
+  <string name="error_connection">無法連線至 Steam 伺服器。請檢查您的行動數據或 Wi-Fi 連線。</string>
+  <string name="error_elsewhere">您已在其他地方登入。請於您的其他裝置上登出 Steam。</string>
+  <string name="error_unconnected">您尚未進行連線。請啟用行動數據或 Wi-Fi。</string>
+  <string name="login_add_account">帳戶名稱</string>
+  <string name="login_add_button">新增帳戶</string>
+  <string name="login_add_error">無法新增帳戶。</string>
+  <string name="login_add_error_disabled">您的帳戶已被 Steam Support 停用。</string>
+  <string name="login_add_error_exists">帳戶已經存在於此裝置上。如果您想要更新您的密碼的話，請將它從您的裝置設定中移除。您的螢幕擷圖不會被刪除。</string>
+  <string name="login_add_error_guard_code">無效的 Steam Guard 代碼。</string>
+  <string name="login_add_error_password">無效的帳戶名稱或密碼。</string>
+  <string name="login_add_guard_code">Steam Guard 代碼</string>
+  <string name="login_add_guard_info">一組安全代碼已經寄到您的帳戶的電子郵件（%1$s）。\n輸入以下的代碼進行登入。\n\n如果您在收件匣找不到的話，請檢查您的垃圾郵件。\n如果您找不到該訊息，請聯絡 Steam Support。</string>
+  <string name="login_add_guard_name">裝置名稱</string>
+  <string name="login_add_info">請輸入您的 Steam 登入資訊。\n您將會在您的其他裝置上登出。</string>
+  <string name="login_add_label">新增帳戶</string>
+  <string name="login_add_password">密碼</string>
+  <string name="login_add_privacy">您的登入資訊只會傳送到 Steam 伺服器。一個登入金鑰（不是您的密碼）將會儲存在這個裝置上，您可以在裝置設定內移除帳戶（您的螢幕擷圖不會被刪除）。</string>
+  <string name="login_add_progress">正在取得帳戶資訊</string>
+  <string name="login_select_action_add">新增帳戶</string>
+  <string name="login_select_corrupted">這個帳戶已經毀損，請將它從您的裝置設定中移除。您的螢幕擷圖不會被刪除。</string>
+  <string name="login_select_info">按下選單上的「新增帳戶」按鈕以開始。</string>
+  <string name="login_select_label">選擇您的帳戶</string>
+  <string name="notification_failure">無法拍攝 Steam 螢幕擷圖。</string>
+  <string name="notification_failure_info">拍攝 %1$s 螢幕擷圖失敗。</string>
+  <string name="notification_success">已拍攝 Steam 螢幕擷圖。</string>
+  <string name="notification_success_info">已拍攝 %1$s 張螢幕擷圖。</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">按住您的熱鍵進行擷圖。</string>
+  <string name="preview_delete">要從這個裝置刪除螢幕擷圖嗎？</string>
+  <string name="preview_fail">無法讀取螢幕擷圖 %1$d/%2$s/%3$s。</string>
+  <string name="screenshots_action_delete">本機刪除</string>
+  <string name="screenshots_action_share">分享</string>
+  <string name="screenshots_action_share_gallery">分享線上螢幕擷圖</string>
+  <string name="screenshots_action_upload">上傳</string>
+  <string name="screenshots_action_view">線上檢視</string>
+  <string name="screenshots_action_view_gallery">檢視線上螢幕擷圖</string>
+  <string name="screenshots_games_empty">您沒有任何螢幕擷圖。\n\n只要按住您的熱鍵（通常為降低音量 + 電源鍵）即可在進行遊戲時拍攝螢幕擷圖。\n\n一張未壓縮的螢幕擷圖將會儲存於您的裝置預設螢幕擷圖資料夾內。</string>
+  <string name="screenshots_images_contentdescription">螢幕擷圖</string>
+  <string name="screenshots_images_delete">要從此裝置刪除所選擇的螢幕擷圖嗎？</string>
+  <string name="screenshots_images_delete_single">要從此裝置刪除所選擇的螢幕擷圖嗎？</string>
+  <string name="screenshots_images_select">從左邊選擇一個遊戲。</string>
+  <string name="screenshots_images_uploaded">已上傳</string>
+  <string name="upload_button">上傳</string>
+  <string name="upload_caption">說明</string>
+  <string name="upload_error">無法上傳螢幕擷圖。</string>
+  <string name="upload_error_eresult">無法登入至 Steam。您的登入金鑰可能已經過期，請嘗試將您的帳戶從裝置設定內移除並重新加入。您的螢幕擷圖不會被刪除。</string>
+  <plurals name="upload_header">
+    <item quantity="other">%1$d 張 %3$s 螢幕擷圖（%2$s）準備上傳。</item>
+  </plurals>
+  <string name="upload_label">上傳</string>
+  <string name="upload_location">遊戲位置</string>
+  <string name="upload_progress">正在上傳螢幕擷圖</string>
+  <plurals name="upload_size_bytes">
+    <item quantity="other">%1$dB</item>
+  </plurals>
+  <plurals name="upload_size_kilobytes">
+    <item quantity="other">%1$dKB</item>
+  </plurals>
+  <plurals name="upload_size_megabytes">
+    <item quantity="other">%1$dMB</item>
+  </plurals>
+  <plurals name="upload_size_gigabytes">
+    <item quantity="other">%1$dGB</item>
+  </plurals>
+  <string name="upload_spoiler">可能有劇情透露</string>
+  <string name="upload_uploading">正在上傳…</string>
+  <string name="upload_visibility">隱私</string>
+  <string-array name="upload_visibility">
+    <item>公開</item>
+    <item>僅限好友</item>
+    <item>私人</item>
+  </string-array>
+
+</resources>
