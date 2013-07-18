@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">À espera que a ação anterior termine…</string>
+  <string name="cancelling_title">A concluir</string>
+  <string name="delete_cancel">Cancelar</string>
+  <string name="delete_ok">OK</string>
+  <string name="error">Erro</string>
+  <string name="error_connection">Não foi possível ligar aos servidores do Steam. Verifica a tua ligação de dados ou de Wi-Fi.</string>
+  <string name="error_elsewhere">Estás online noutro dispositivo. Desconecta-te do Steam nos teus outros dispositivos.</string>
+  <string name="error_unconnected">Não estás ligado(a) a nenhuma rede. Ativa a ligação de dados ou de Wi-Fi.</string>
+  <string name="login_add_account">Nome de conta</string>
+  <string name="login_add_button">Adicionar conta</string>
+  <string name="login_add_error">Não foi possível adicionar a conta.</string>
+  <string name="login_add_error_disabled">A tua conta foi suspensa pelo Suporte Steam.</string>
+  <string name="login_add_error_exists">Esta conta já está ligada a este dispositivo. Remove a conta nas definições do teu dispositivo se quiseres atualizar a tua palavra-passe. As tuas capturas de ecrã não serão removidas.</string>
+  <string name="login_add_error_guard_code">Código de segurança inválido.</string>
+  <string name="login_add_error_password">Nome de utilizador ou palavra-passe incorreta.</string>
+  <string name="login_add_guard_code">Código de segurança</string>
+  <string name="login_add_guard_info">Um código de segurança foi enviado para o endereço associado com a tua conta: %1$s.\nIntroduz o código abaixo para entrares.\n\nVerifica a caixa de Spam se não conseguires encontrá-la na tua caixa de entrada.\nSe não conseguires encontrar a mensagem, contacta o Suporte Steam.</string>
+  <string name="login_add_guard_name">Nome do dispositivo</string>
+  <string name="login_add_info">Introduz os dados da conta Steam.\nSerás desconectado do Steam noutros dispositivos.</string>
+  <string name="login_add_label">Adicionar conta</string>
+  <string name="login_add_password">Palavra-passe</string>
+  <string name="login_add_privacy">Os teus dados de conta apenas serão enviados para os servidores do Steam. Neste dispositivo, será armazenada uma chave de registo (não é a tua palavra-passe) e, se quiseres, poderás remover a conta nas definições do teu dispositivo (as tuas capturas de ecrã não serão removidas).</string>
+  <string name="login_add_progress">A recolher informações de conta</string>
+  <string name="login_select_action_add">Adicionar conta</string>
+  <string name="login_select_corrupted">Esta conta está corrompida. Remove-a nas definições do teu dispositivo. As tuas capturas de ecrã não serão removidas.</string>
+  <string name="login_select_info">Prime o botão "Adicionar conta" na barra de ações para começares.</string>
+  <string name="login_select_label">Seleciona a tua conta</string>
+  <string name="notification_failure">Não foi possível guardar uma captura Steam.</string>
+  <string name="notification_failure_info">Falha ao guardar a captura de ecrã de %1$s.</string>
+  <string name="notification_success">Captura de ecrã do Steam guardada.</string>
+  <string name="notification_success_info">Foram guardadas capturas de ecrã de %1$s.</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">Pressiona os botões de tirar capturas de ecrã para tirares uma.</string>
+  <string name="preview_delete">Apagar captura de ecrã deste dispositivo?</string>
+  <string name="preview_fail">Não foi possível carregar a captura de ecrã %1$d/%2$s/%3$s.</string>
+  <string name="screenshots_action_delete">Eliminar localmente</string>
+  <string name="screenshots_action_share">Partilhar</string>
+  <string name="screenshots_action_share_gallery">Partilhar galeria online</string>
+  <string name="screenshots_action_upload">Enviar</string>
+  <string name="screenshots_action_view">Ver online</string>
+  <string name="screenshots_action_view_gallery">Ver galeria online</string>
+  <string name="screenshots_games_empty">Não tens nenhuma captura de ecrã.\n\nPrime os botões para tirar capturas de ecrã (normalmente "Baixar Volume"+"Ligar/Desligar") enquanto jogas um jogo.\n\nUma cópia não comprimida da captura vai ser guardada na pasta predefinida de capturas de ecrã do teu dispositivo.</string>
+  <string name="screenshots_images_contentdescription">Captura de ecrã</string>
+  <string name="screenshots_images_delete">Apagar capturas de ecrã selecionadas deste dispositivo?</string>
+  <string name="screenshots_images_delete_single">Apagar captura de ecrã selecionada deste dispositivo?</string>
+  <string name="screenshots_images_select">Seleciona um jogo na lista à esquerda.</string>
+  <string name="screenshots_images_uploaded">Enviadas</string>
+  <string name="upload_button">Enviar</string>
+  <string name="upload_caption">Legenda</string>
+  <string name="upload_error">Não foi possível enviar uma captura de ecrã.</string>
+  <string name="upload_error_eresult">Não foi possível estabelecer uma ligação ao Steam. É possível que a tua chave de registo tenha expirado. Tenta remover a tua conta nas definições do teu dispositivo e adiciona-a de novo. As tuas capturas de ecrã não serão apagadas.</string>
+  <plurals name="upload_header">
+	<item quantity="one">A enviar: %1$d captura de ecrã (%2$s) de %3$s.</item>
+	<item quantity="other">A enviar: %1$d capturas de ecrã (%2$s) de %3$s.</item>
+  </plurals>
+  <string name="upload_label">Enviar</string>
+  <string name="upload_location">Localização no jogo</string>
+  <string name="upload_progress">A enviar capturas de ecrã</string>
+  <string name="upload_size_bytes">%1$d b</string>
+  <string name="upload_size_kilobytes">%1$d Kb</string>
+  <string name="upload_size_megabytes">%1$d MB</string>
+  <string name="upload_size_gigabytes">%1$d GB</string>
+  <string name="upload_spoiler">Spoiler potencial</string>
+  <string name="upload_uploading">A enviar…</string>
+  <string name="upload_visibility">Visibilidade:</string>
+  <string-array name="upload_visibility">
+	<item>Pública</item>
+	<item>Só para amigos</item>
+	<item>Privada</item>
+  </string-array>
+
+</resources>

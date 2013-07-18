@@ -19,7 +19,7 @@
   <string name="login_add_error_password">Неправильное имя аккаунта или пароль.</string>
   <string name="login_add_guard_code">Код безопасности</string>
   <string name="login_add_guard_info">На ваш адрес электронной почты, расположенный на %1$s, был отправлен код безопасности.\nВведите этот код ниже, чтобы войти.\n\nПроверьте папку со спамом, если вы не можете найти сообщение.\nЕсли сообщение найти не удалось, обратитесь в службу поддержки Steam.</string>
-  <string name="login_add_guard_name">Имя устройства (от 6 знаков)</string>
+  <string name="login_add_guard_name">Имя устройства</string>
   <string name="login_add_info">Введите данные вашего аккаунта Steam.\nВы будете отключены на других ваших устройствах.</string>
   <string name="login_add_label">Добавить аккаунт</string>
   <string name="login_add_password">Пароль</string>
@@ -43,7 +43,7 @@
   <string name="screenshots_action_upload">Загрузить</string>
   <string name="screenshots_action_view">Просмотреть в Сообществе</string>
   <string name="screenshots_action_view_gallery">Просмотреть галерею в Сообществе</string>
-  <string name="screenshots_games_empty">У вас нет скриншотов.\n\nСнимайте скриншоты, зажимая кнопки для съёмки скриншотов (по умолчанию Тише + Питание) вашего устройства во время игры.\n\nВысококачественные копии скриншотов будут сохранены в папке скриншотов вашего устройства.</string>
+  <string name="screenshots_games_empty">У вас нет скриншотов.\n\nНажмите Домой, запустите игру и снимайте скриншоты, зажимая кнопки для съёмки скриншотов вашего устройства (по умолчанию Тише + Питание).\n\nВысококачественные копии скриншотов будут сохранены в папке скриншотов вашего устройства.</string>
   <string name="screenshots_images_contentdescription">Скриншот</string>
   <string name="screenshots_images_delete">Удалить выбранный скриншот с этого устройства?</string>
   <string name="screenshots_images_delete_single">Удалить выбранные скриншоты с этого устройства?</string>
@@ -62,18 +62,10 @@
   <string name="upload_label">Загрузить</string>
   <string name="upload_location">Место в игре</string>
   <string name="upload_progress">Загрузка скриншотов</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$d Б</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$d КБ</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$d МБ</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$d ГБ</item>
-  </plurals>
+  <string name="upload_size_bytes">%1$d Б</string>
+  <string name="upload_size_kilobytes">%1$d КБ</string>
+  <string name="upload_size_megabytes">%1$d МБ</string>
+  <string name="upload_size_gigabytes">%1$d ГБ</string>
   <string name="upload_spoiler">Возможно спойлер</string>
   <string name="upload_uploading">Загрузка…</string>
   <string name="upload_visibility">Видимость</string>

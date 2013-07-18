@@ -19,7 +19,7 @@
   <string name="login_add_error_password">Nome dell\'account o password non validi.</string>
   <string name="login_add_guard_code">Codice di sicurezza</string>
   <string name="login_add_guard_info">È stato inviato un codice di sicurezza all\'indirizzo email associato al tuo account a %1$s.\nInserisci il codice in basso per effettuare l\'accesso.\n\nControlla la tua cartella dello spam se non riesci a trovarlo in quella della posta in arrivo.\nSe non riesci a trovare il messaggio, contatta l\'Assistenza di Steam.</string>
-  <string name="login_add_guard_name">Nome del dispos. (6+ caratteri)</string>
+  <string name="login_add_guard_name">Nome del dispositivo</string>
   <string name="login_add_info">Inserisci i dettagli del tuo account di Steam.\nSarai scollegato dai tuoi altri dispositivi.</string>
   <string name="login_add_label">Aggiungi account</string>
   <string name="login_add_password">Password</string>
@@ -59,18 +59,10 @@
   <string name="upload_label">Carica</string>
   <string name="upload_location">Luogo in gioco</string>
   <string name="upload_progress">Caricamento dello screenshot</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$d B</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$d kB</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$d MB</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$d GB</item>
-  </plurals>
+  <string name="upload_size_bytes">%1$d B</string>
+  <string name="upload_size_kilobytes">%1$d kB</string>
+  <string name="upload_size_megabytes">%1$d MB</string>
+  <string name="upload_size_gigabytes">%1$d GB</string>
   <string name="upload_spoiler">Potenziale spoiler</string>
   <string name="upload_uploading">Caricamento</string>
   <string name="upload_visibility">Visibilità</string>

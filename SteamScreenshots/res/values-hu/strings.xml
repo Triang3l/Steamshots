@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">Várakozás az elöző művelet befejezésére…</string>
+  <string name="cancelling_title">Befejezés</string>
+  <string name="delete_cancel">Mégsem</string>
+  <string name="delete_ok">Igen</string>
+  <string name="error">Hiba</string>
+  <string name="error_connection">Hiba a Steam szerver csatlakozása során. Kérlek ellenőrizd a mobilinterneted vagy a Wi-Fi csatlakozást.</string>
+  <string name="error_elsewhere">Be vagy lépve más helyen. Kérlek lépj ki a Steam fiókodból a másik eszközön.</string>
+  <string name="error_unconnected">Csatlakozás sikertelen. Engedélyezd a Wi-Fi hálozatot vagy a mobilinternetet.</string>
+  <string name="login_add_account">Fiók neve</string>
+  <string name="login_add_button">Fiók hozzáadása</string>
+  <string name="login_add_error">A fiók hozzáadása sikertelen.</string>
+  <string name="login_add_error_disabled">A Steam Support felfüggesztette a fiókodat.</string>
+  <string name="login_add_error_exists">A fiók már létezik ezen az eszközön. Távolitsd el a fiókod a Beállítások menüpont alatt, ha megszeretnéd változtatni a jelszavad. A képernyőmentéseid megmaradnak.</string>
+  <string name="login_add_error_guard_code">Érvénytelen biztonsági kód.</string>
+  <string name="login_add_error_password">Érvénytelen felhasználónév vagy jelszó.</string>
+  <string name="login_add_guard_code">Biztonsági kód</string>
+  <string name="login_add_guard_info">A biztonsági kód elküldve a regisztráláskor megadott email címre %1$s.\nAdd meg a kódot a belépéshez.\n\nKérlek ellenőrizd a Spam mappádat is.\nHa nem találod az emailt kérlek lépj kapcsolatba a Steam Support-tal.</string>
+  <string name="login_add_guard_name">Eszköz neve</string>
+  <string name="login_add_info">Kérlek add meg a Steam belépési adataidat.\nA többi eszközödön ki leszel lépve.</string>
+  <string name="login_add_label">Fiók hozzáadása</string>
+  <string name="login_add_password">Jelszó</string>
+  <string name="login_add_privacy">A bejelentkezési adataid csak a Steam szervereinek lesznek elküldve, harmadik félnek nem lesz kiadva. Ezen az eszközön egy belépési kulcs - nem a jelszavad - lesz tárolva, és bármikor eltávolíthatod a fiókod a Beállítások menüpont alatt (a képernyőmentéseid megmaradnak).</string>
+  <string name="login_add_progress">Fiók információ lekérése</string>
+  <string name="login_select_action_add">Fiók hozzáadása</string>
+  <string name="login_select_corrupted">Ez a fiók sérült. Távolítsd el a beállítások menüpont alatt. A képernyőmentéseid megmaradnak.</string>
+  <string name="login_select_info">Nyomd meg a "Fiók hozzáadása" gombot a kezdéshez.</string>
+  <string name="login_select_label">Fiók kiválasztása</string>
+  <string name="notification_failure">Steam képernyőmentés sikertelen.</string>
+  <string name="notification_failure_info">Hiba %1$s képernyőmentés során.</string>
+  <string name="notification_success">Steam képernyőmentés elkészítve.</string>
+  <string name="notification_success_info">%1$s képernyőmentés elkészítve.</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">Tarsd lenyomva a képernyőkészítés gombot a képernyőmentés elkészítéséhez.</string>
+  <string name="preview_delete">Biztosan törölni szeretnéd a képernyőmentést erről az eszközről?</string>
+  <string name="preview_fail">Képernyőmentés betöltése sikertelen %1$d/%2$s/%3$s.</string>
+  <string name="screenshots_action_delete">Törlés helyileg</string>
+  <string name="screenshots_action_share">Megosztás</string>
+  <string name="screenshots_action_share_gallery">Online galéria megosztása</string>
+  <string name="screenshots_action_upload">Feltöltés</string>
+  <string name="screenshots_action_view">Megtekintés Online</string>
+  <string name="screenshots_action_view_gallery">Online galéria megtekintése</string>
+  <string name="screenshots_games_empty">Még egyetlen képernyőmentésed sincs.\n\nKépernyőmentés készítéséhez tartsd lenyomva a képernyőmentés gombot (általában Hangerőszabályzó Le + Kikapcsoló gomb) játék közben.\n\nEgy tömörítetlen másolat a képernyőmentésről tárolásra kerül az alapértelmezett képernyőmentések mappában.</string>
+  <string name="screenshots_images_contentdescription">Képernyőmentés</string>
+  <string name="screenshots_images_delete">Tényleg törölni szeretnéd a kiválasztott képernyőmentéseket?</string>
+  <string name="screenshots_images_delete_single">Tényleg törölni szeretnéd a kiválasztott képernyőmentést?</string>
+  <string name="screenshots_images_select">Válassz ki egy játékot balról.</string>
+  <string name="screenshots_images_uploaded">Feltöltve</string>
+  <string name="upload_button">Feltöltés</string>
+  <string name="upload_caption">Kép címe</string>
+  <string name="upload_error">Képernyőmentés feltöltése sikertelen.</string>
+  <string name="upload_error_eresult">Belépés a Steambe sikertelen. Lehetséges, hogy a bejelentkezési kulcs lejárt. Próbáld meg eltávolítani, majd úra hozzáadni a fiókot a beállítások menüpont alatt. A képernyőmentéseid megmaradnak.</string>
+  <plurals name="upload_header">
+    <item quantity="other">%1$d képernyőmentés (%2$s) a(z) %3$s játékból fel lesz töltve.</item>
+  </plurals>
+  <string name="upload_label">Feltöltés</string>
+  <string name="upload_location">Hely</string>
+  <string name="upload_progress">Képernyőmentések feltöltése</string>
+  <string name="upload_size_bytes">%1$d B</string>
+  <string name="upload_size_kilobytes">%1$d kB</string>
+  <string name="upload_size_megabytes">%1$d MB</string>
+  <string name="upload_size_gigabytes">%1$d GB</string>
+  <string name="upload_spoiler">Lehetséges spoiler</string>
+  <string name="upload_uploading">Feltöltés…</string>
+  <string name="upload_visibility">Láthatóság</string>
+  <string-array name="upload_visibility">
+    <item>Publikus</item>
+    <item>Csak barátok</item>
+    <item>Privát</item>
+  </string-array>
+
+</resources>
