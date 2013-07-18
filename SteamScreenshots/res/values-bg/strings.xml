@@ -7,7 +7,7 @@
   <string name="delete_cancel">Отказ</string>
   <string name="delete_ok">Добре</string>
   <string name="error">Грешка</string>
-  <string name="error_connection">Неуспешна връзка със Steam мрежата. Проверете Вашата връзка за данни или Wi-Fi.</string>
+  <string name="error_connection">Неуспешна връзка със Steam мрежата. Проверете Вашата връзка за мобилни данни или Wi-Fi.</string>
   <string name="error_elsewhere">Вие сте влезли от другаде. Излезте от Steam от другото Ви устройство.</string>
   <string name="error_unconnected">Не сте свързвани. Включете връзка за данни или Wi-Fi.</string>
   <string name="login_add_account">Име на акаунта</string>
@@ -19,7 +19,7 @@
   <string name="login_add_error_password">Невалидно име на акаунта или парола.</string>
   <string name="login_add_guard_code">Защитен код</string>
   <string name="login_add_guard_info">Защитен код беше пратен на пощата асоциирана към Вашият акаунт а именно: %1$s.\nВкарайте кодът по долу за да влезете.\n\nПроверете спам директорията в случай, че не можете да намерите писмото.\nАко не го намерите се свържете със Steam поддръжката.</string>
-  <string name="login_add_guard_name">Име на устройството (мин. 6 знака)</string>
+  <string name="login_add_guard_name">Име на устройството</string>
   <string name="login_add_info">Въведете Вашите Steam детайли.\nВие ще бъдете изключен от другите Ви устройства.</string>
   <string name="login_add_label">Добави акаунт</string>
   <string name="login_add_password">Парола</string>
@@ -43,7 +43,7 @@
   <string name="screenshots_action_upload">Качване</string>
   <string name="screenshots_action_view">Виж онлайн</string>
   <string name="screenshots_action_view_gallery">Виж галерията онлайн</string>
-  <string name="screenshots_games_empty">Вие нямата снимки.\n\nНаправте снимки задържайки комбинацията за снимка на Вашето устройство (обикновено бутона за включване или контрол на звука) докато играете.\n\nНекопресирано копие на снимката ще бъде запазено в основната папка за снимки.</string>
+  <string name="screenshots_games_empty">Вие нямата снимки.\n\nНатиснете „Home“ бутона, стартирайте игра и направете снимки задържайки комбинацията за снимка на Вашето устройство (обикновено бутона за включване или контрол на звука) докато играете.\n\nНекопресирано копие на снимката ще бъде запазено в основната папка за снимки.</string>
   <string name="screenshots_images_contentdescription">Снимка</string>
   <string name="screenshots_images_delete">Изтриване на избраните снимки от това устройство?</string>
   <string name="screenshots_images_delete_single">Изтриване на избраната снимка от това устройство?</string>
@@ -60,18 +60,10 @@
   <string name="upload_label">Качване</string>
   <string name="upload_location">Местоположение в играта</string>
   <string name="upload_progress">Качване на снимки</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$dB</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$dKB</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$dMB</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$dGB</item>
-  </plurals>
+  <string name="upload_size_bytes">%1$dB</string>
+  <string name="upload_size_kilobytes">%1$dKB</string>
+  <string name="upload_size_megabytes">%1$dMB</string>
+  <string name="upload_size_gigabytes">%1$dGB</string>
   <string name="upload_spoiler">Потенциален спойлер</string>
   <string name="upload_uploading">Качване…</string>
   <string name="upload_visibility">Видимост</string>
