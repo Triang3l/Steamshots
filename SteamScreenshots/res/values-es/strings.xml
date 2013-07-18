@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">Capturas</string>
+  <string name="app_name">Steamshots</string>
   <string name="cancelling_message">Esperando a que una acción previa finalice…</string>
   <string name="cancelling_title">Finalizando</string>
   <string name="delete_cancel">Cancelar</string>

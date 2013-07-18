@@ -43,7 +43,7 @@
   <string name="screenshots_action_upload">Upload</string>
   <string name="screenshots_action_view">View online</string>
   <string name="screenshots_action_view_gallery">View online gallery</string>
-  <string name="screenshots_games_empty">You don\'t have any screenshots.\n\nTake a screenshot by holding your device screenshot keys (usually Volume Down + Power) while playing a game.\n\nAn uncompressed copy of the screenshot will be saved in your device default screenshots folder.</string>
+  <string name="screenshots_games_empty">You don\'t have any screenshots.\n\nPress your Home button, launch a game and take screenshots by holding down your device screenshot keys (usually Volume Down + Power).\n\nAn uncompressed copy of the screenshot will be saved in your device default screenshots folder.</string>
   <string name="screenshots_images_contentdescription">Screenshot</string>
   <string name="screenshots_images_delete">Delete selected screenshots from this device?</string>
   <string name="screenshots_images_delete_single">Delete selected screenshot from this device?</string>

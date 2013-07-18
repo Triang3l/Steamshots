@@ -43,7 +43,7 @@
   <string name="screenshots_action_upload">Загрузить</string>
   <string name="screenshots_action_view">Просмотреть в Сообществе</string>
   <string name="screenshots_action_view_gallery">Просмотреть галерею в Сообществе</string>
-  <string name="screenshots_games_empty">У вас нет скриншотов.\n\nСнимайте скриншоты, зажимая кнопки для съёмки скриншотов (по умолчанию Тише + Питание) вашего устройства во время игры.\n\nВысококачественные копии скриншотов будут сохранены в папке скриншотов вашего устройства.</string>
+  <string name="screenshots_games_empty">У вас нет скриншотов.\n\nНажмите Домой, запустите игру и снимайте скриншоты, зажимая кнопки для съёмки скриншотов вашего устройства (по умолчанию Тише + Питание).\n\nВысококачественные копии скриншотов будут сохранены в папке скриншотов вашего устройства.</string>
   <string name="screenshots_images_contentdescription">Скриншот</string>
   <string name="screenshots_images_delete">Удалить выбранный скриншот с этого устройства?</string>
   <string name="screenshots_images_delete_single">Удалить выбранные скриншоты с этого устройства?</string>
