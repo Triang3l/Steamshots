@@ -60,18 +60,10 @@
   <string name="upload_label">Subir</string>
   <string name="upload_location">Localización</string>
   <string name="upload_progress">Subiendo capturas</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$d B</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$d KB</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$d MB</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$d GB</item>
-  </plurals>
+  <string name="upload_size_bytes">%1$d B</string>
+  <string name="upload_size_kilobytes">%1$d KB</string>
+  <string name="upload_size_megabytes">%1$d MB</string>
+  <string name="upload_size_gigabytes">%1$d GB</string>
   <string name="upload_spoiler">Posible spoiler</string>
   <string name="upload_uploading">Subiendo…</string>
   <string name="upload_visibility">Visibilidad</string>

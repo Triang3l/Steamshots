@@ -60,18 +60,10 @@
   <string name="upload_label">Upload</string>
   <string name="upload_location">In-game location</string>
   <string name="upload_progress">Uploading screenshots</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$dB</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$dKB</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$dMB</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$dGB</item>
-  </plurals>
+  <string name="upload_size_bytes">%1$dB</string>
+  <string name="upload_size_kilobytes">%1$dKB</string>
+  <string name="upload_size_megabytes">%1$dMB</string>
+  <string name="upload_size_gigabytes">%1$dGB</string>
   <string name="upload_spoiler">Potential spoiler</string>
   <string name="upload_uploading">Uploading…</string>
   <string name="upload_visibility">Visibility</string>

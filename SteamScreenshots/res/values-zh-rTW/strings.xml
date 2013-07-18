@@ -59,18 +59,10 @@
   <string name="upload_label">上傳</string>
   <string name="upload_location">遊戲位置</string>
   <string name="upload_progress">正在上傳螢幕擷圖</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$dB</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$dKB</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$dMB</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$dGB</item>
-  </plurals>
+  <string name="upload_size_bytes">%1$dB</string>
+  <string name="upload_size_kilobytes">%1$dKB</string>
+  <string name="upload_size_megabytes">%1$dMB</string>
+  <string name="upload_size_gigabytes">%1$dGB</string>
   <string name="upload_spoiler">可能有劇情透露</string>
   <string name="upload_uploading">正在上傳…</string>
   <string name="upload_visibility">隱私</string>

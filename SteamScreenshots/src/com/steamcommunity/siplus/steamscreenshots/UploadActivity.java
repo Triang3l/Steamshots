@@ -84,19 +84,19 @@ public final class UploadActivity extends Activity {
 		int resid;
 		int value;
 		if (size < 1024L) {
-			resid = R.plurals.upload_size_bytes;
+			resid = R.string.upload_size_bytes;
 			value = (int)size;
 		} else if (size < 1048576L) {
-			resid = R.plurals.upload_size_kilobytes;
+			resid = R.string.upload_size_kilobytes;
 			value = (int)(size / 1024L);
 		} else if (size < 1073741824L) {
-			resid = R.plurals.upload_size_megabytes;
+			resid = R.string.upload_size_megabytes;
 			value = (int)(size / 1048576L);
 		} else {
-			resid = R.plurals.upload_size_gigabytes;
+			resid = R.string.upload_size_gigabytes;
 			value = (int)(size / 1073741824L);
 		}
-		return mResources.getQuantityString(resid, value, value);
+		return mResources.getString(resid, value);
 	}
 
 	void hideUploadProgress() {

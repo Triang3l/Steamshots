@@ -96,10 +96,6 @@ public final class R {
     }
     public static final class plurals {
         public static final int upload_header=0x7f080000;
-        public static final int upload_size_bytes=0x7f080001;
-        public static final int upload_size_gigabytes=0x7f080004;
-        public static final int upload_size_kilobytes=0x7f080002;
-        public static final int upload_size_megabytes=0x7f080003;
     }
     public static final class string {
         public static final int app_name=0x7f070000;
@@ -157,9 +153,13 @@ public final class R {
         public static final int upload_label=0x7f070034;
         public static final int upload_location=0x7f070035;
         public static final int upload_progress=0x7f070036;
-        public static final int upload_spoiler=0x7f070037;
-        public static final int upload_uploading=0x7f070038;
-        public static final int upload_visibility=0x7f070039;
+        public static final int upload_size_bytes=0x7f070037;
+        public static final int upload_size_gigabytes=0x7f07003a;
+        public static final int upload_size_kilobytes=0x7f070038;
+        public static final int upload_size_megabytes=0x7f070039;
+        public static final int upload_spoiler=0x7f07003b;
+        public static final int upload_uploading=0x7f07003c;
+        public static final int upload_visibility=0x7f07003d;
     }
     public static final class xml {
         public static final int authenticator=0x7f040000;

@@ -59,18 +59,10 @@
   <string name="upload_label">Carica</string>
   <string name="upload_location">Luogo in gioco</string>
   <string name="upload_progress">Caricamento dello screenshot</string>
-  <plurals name="upload_size_bytes">
-    <item quantity="other">%1$d B</item>
-  </plurals>
-  <plurals name="upload_size_kilobytes">
-    <item quantity="other">%1$d kB</item>
-  </plurals>
-  <plurals name="upload_size_megabytes">
-    <item quantity="other">%1$d MB</item>
-  </plurals>
-  <plurals name="upload_size_gigabytes">
-    <item quantity="other">%1$d GB</item>
-  </plurals>
+  <string name="upload_size_bytes">%1$d B</string>
+  <string name="upload_size_kilobytes">%1$d kB</string>
+  <string name="upload_size_megabytes">%1$d MB</string>
+  <string name="upload_size_gigabytes">%1$d GB</string>
   <string name="upload_spoiler">Potenziale spoiler</string>
   <string name="upload_uploading">Caricamento</string>
   <string name="upload_visibility">Visibilità</string>
