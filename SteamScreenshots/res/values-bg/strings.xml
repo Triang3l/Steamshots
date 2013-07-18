@@ -43,7 +43,7 @@
   <string name="screenshots_action_upload">Качване</string>
   <string name="screenshots_action_view">Виж онлайн</string>
   <string name="screenshots_action_view_gallery">Виж галерията онлайн</string>
-  <string name="screenshots_games_empty">Вие нямата снимки.\n\nНатиснете „Home“ бутона, стартирайте игра и направете снимки задържайки комбинацията за снимка на Вашето устройство (обикновено бутона за включване + контрол на звука) докато играете.\n\nНекопресирано копие на снимката ще бъде запазено в основната папка за снимки.</string>
+  <string name="screenshots_games_empty">Вие нямата снимки.\n\nНатиснете бутон „Начало“, стартирайте игра и направете снимки задържайки комбинацията за снимка на Вашето устройство (обикновено бутона за включване и контрол на звука) докато играете.\n\nНекопресирано копие на снимката ще бъде запазено в основната папка за снимки.</string>
   <string name="screenshots_images_contentdescription">Снимка</string>
   <string name="screenshots_images_delete">Изтриване на избраните снимки от това устройство?</string>
   <string name="screenshots_images_delete_single">Изтриване на избраната снимка от това устройство?</string>
