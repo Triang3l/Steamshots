@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">Warte auf Beendigung des vorherigen Vorgangs…</string>
+  <string name="cancelling_title">Wird beendet…</string>
+  <string name="delete_cancel">Abbrechen</string>
+  <string name="delete_ok">OK</string>
+  <string name="error">Fehler</string>
+  <string name="error_connection">Konnte nicht mit den Steam-Servern verbinden. Überprüfen Sie Ihre Mobilfunk- oder WLAN-Verbindung.</string>
+  <string name="error_elsewhere">Sie sind auf einem anderen Gerät angemeldet. Melden Sie sich auf Ihren anderen Geräten von Steam ab.</string>
+  <string name="error_unconnected">Keine Internetverbindung vorhanden. Schalten Sie Ihre Mobilfunk- oder WLAN-Verbindung ein.</string>
+  <string name="login_add_account">Account-Name</string>
+  <string name="login_add_button">Account hinzufügen</string>
+  <string name="login_add_error">Konnte Account nicht hinzufügen.</string>
+  <string name="login_add_error_disabled">Ihr Account wurde vom Steam Support gesperrt.</string>
+  <string name="login_add_error_exists">Dieser Account existiert auf diesem Gerät bereits. Entfernen Sie den Account in Ihren Geräteeinstellungen, falls Sie das Passwort korrigieren möchten. Ihre Screenshots bleiben erhalten.</string>
+  <string name="login_add_error_guard_code">Ungültiger Sicherheitscode.</string>
+  <string name="login_add_error_password">Account-Name oder Passwort ungültig.</string>
+  <string name="login_add_guard_code">Sicherheitscode</string>
+  <string name="login_add_guard_info">Ein Sicherheitscode wurde an Ihre Account-E-Mail-Adresse bei %1$s geschickt.\nZum Anmelden geben Sie den Code unten ein.\n\nSehen Sie in Ihrem Spam-Ordner nach, falls Sie ihn nicht in Ihrem Posteingang finden können.\nKontaktieren Sie den Steam Support, wenn Sie die Nachricht nicht finden können.</string>
+  <string name="login_add_guard_name">Gerätename</string>
+  <string name="login_add_info">Geben Sie Ihre Steam-Anmeldedaten ein.\nSie werden auf Ihren anderen Geräten abgemeldet.</string>
+  <string name="login_add_label">Account hinzufügen</string>
+  <string name="login_add_password">Passwort</string>
+  <string name="login_add_privacy">Ihre Anmeldedaten werden ausschließlich an die Steam-Server gesendet. Auf diesem Gerät wird ein Anmeldeschlüssel gespeichert (nicht Ihr Passwort!) und es wird Ihnen möglich sein, den Account in Ihren Geräteeinstellungen zu entfernen (Ihre Screenshots bleiben erhalten).</string>
+  <string name="login_add_progress">Hole Account-Informationen</string>
+  <string name="login_select_action_add">Account hinzufügen</string>
+  <string name="login_select_corrupted">Dieser Account ist beschädigt. Entfernen Sie ihn in Ihren Geräteeinstellungen. Ihre Screenshots bleiben erhalten.</string>
+  <string name="login_select_info">Tippen Sie auf den "Account hinzufügen"-Button in der Aktionsleiste um zu beginnen.</string>
+  <string name="login_select_label">Wählen Sie Ihren Account aus</string>
+  <string name="notification_failure">Konnte keinen Steam-Screenshot aufnehmen.</string>
+  <string name="notification_failure_info">Aufnehmen eines Screenshots von %1$s ist fehlgeschlagen.</string>
+  <string name="notification_success">Steam-Screenshot aufgenommen.</string>
+  <string name="notification_success_info">Screenshot von %1$s aufgenommen.</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">Halten Sie Ihre Screenshot-Tasten, um einen Screenshot aufzunehmen.</string>
+  <string name="preview_delete">Screenshot von diesem Gerät löschen?</string>
+  <string name="preview_fail">Konnte Screenshot nicht laden: %1$d/%2$s/%3$s</string>
+  <string name="screenshots_action_delete">Löschen (lokal)</string>
+  <string name="screenshots_action_share">Teilen</string>
+  <string name="screenshots_action_share_gallery">Teilen in Online-Galerie</string>
+  <string name="screenshots_action_upload">Hochladen</string>
+  <string name="screenshots_action_view">Online ansehen</string>
+  <string name="screenshots_action_view_gallery">Online-Galerie ansehen</string>
+  <string name="screenshots_games_empty">Sie haben keine Screenshots.\n\nDrücken Sie die Home-Taste, starten Sie ein Spiel und nehmen Sie Screenshots auf, indem Sie Ihre Screenshot-Tasten gedrückt halten (meist Home + Lautstärke veringern).\n\nEin unkomprimiertes Exemplar des Screenshots wird in Ihrem Standard-Screenshot-Ordner auf dem Gerät gespeichert.</string>
+  <string name="screenshots_images_contentdescription">Screenshot</string>
+  <string name="screenshots_images_delete">Ausgewählte Screenshots von diesem Gerät löschen?</string>
+  <string name="screenshots_images_delete_single">Ausgewählten Screenshot von diesem Gerät löschen?</string>
+  <string name="screenshots_images_select">Wählen Sie links ein Spiel aus.</string>
+  <string name="screenshots_images_uploaded">Hochgeladen</string>
+  <string name="upload_button">Hochladen</string>
+  <string name="upload_caption">Bildtext</string>
+  <string name="upload_error">Konnte einen Screenshot nicht hochladen.</string>
+  <string name="upload_error_eresult">Anmeldung bei Steam fehlgeschlagen. Es kann sein, dass Ihr Anmeldeschlüssel abgelaufen ist. Versuchen Sie, Ihren Account in Ihren Geräteeinstellungen zu löschen und fügen Sie ihn erneut hinzu. Ihre Screenshots bleiben erhalten.</string>
+  <plurals name="upload_header">
+    <item quantity="one">%1$d Screenshot (%2$s) von %3$s soll hochgeladen werden.</item>
+    <item quantity="other">%1$d Screenshots (%2$s) von %3$s sollen hochgeladen werden.</item>
+  </plurals>
+  <string name="upload_label">Hochladen</string>
+  <string name="upload_location">Ort Im Spiel</string>
+  <string name="upload_progress">Screenshots werden hochgeladen</string>
+  <string name="upload_size_bytes">%1$d B</string>
+  <string name="upload_size_kilobytes">%1$d KB</string>
+  <string name="upload_size_megabytes">%1$d MB</string>
+  <string name="upload_size_gigabytes">%1$d GB</string>
+  <string name="upload_spoiler">Mögliche Spoiler</string>
+  <string name="upload_uploading">Lade hoch…</string>
+  <string name="upload_visibility">Sichtbarkeit</string>
+  <string-array name="upload_visibility">
+    <item>Öffentlich</item>
+    <item>Nur Freunde</item>
+    <item>Versteckt</item>
+  </string-array>
+
+</resources>
