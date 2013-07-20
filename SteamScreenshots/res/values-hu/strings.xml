@@ -4,8 +4,8 @@
   <string name="app_name">Steamshots</string>
   <string name="cancelling_message">Várakozás az elöző művelet befejezésére…</string>
   <string name="cancelling_title">Befejezés</string>
-  <string name="delete_cancel">Mégsem</string>
-  <string name="delete_ok">Igen</string>
+  <string name="delete_cancel">Mégse</string>
+  <string name="delete_ok">OK</string>
   <string name="error">Hiba</string>
   <string name="error_connection">Hiba a Steam szerver csatlakozása során. Kérlek ellenőrizd a mobilinterneted vagy a Wi-Fi csatlakozást.</string>
   <string name="error_elsewhere">Be vagy lépve más helyen. Kérlek lépj ki a Steam fiókodból a másik eszközön.</string>

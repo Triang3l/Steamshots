@@ -5,7 +5,7 @@
   <string name="cancelling_message">Esperando a que una acción previa finalice…</string>
   <string name="cancelling_title">Finalizando</string>
   <string name="delete_cancel">Cancelar</string>
-  <string name="delete_ok">OK</string>
+  <string name="delete_ok">Aceptar</string>
   <string name="error">Error</string>
   <string name="error_connection">No se ha podido conectar con los servidores de Steam. Comprueba tu conexión.</string>
   <string name="error_elsewhere">Has iniciado sesión en otro dispositivo. Cierrala antes de continuar.</string>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Steamshots</string>
+  <string name="cancelling_message">En attente de la fin de l\'action précédente…</string>
+  <string name="cancelling_title">Finalisation</string>
+  <string name="delete_cancel">Annuler</string>
+  <string name="delete_ok">OK</string>
+  <string name="error">Erreur</string>
+  <string name="error_connection">Impossible de se connecter aux serveurs Steam. Vérifiez votre connexion de données mobile ou Wi-Fi.</string>
+  <string name="error_elsewhere">Vous êtes connecté ailleurs. Déconnectez-vous de Steam sur vos autres appareils.</string>
+  <string name="error_unconnected">Vous n\'êtes pas connecté. Activez la connexion de données mobile ou Wi-Fi.</string>
+  <string name="login_add_account">Nom du compte</string>
+  <string name="login_add_button">Ajouter un compte</string>
+  <string name="login_add_error">Impossible d\'ajouter un compte.</string>
+  <string name="login_add_error_disabled">Votre compte est suspendu par le Support Steam.</string>
+  <string name="login_add_error_exists">Compte déjà existant sur cet appareil. Supprimez le compte des paramètres de votre appareil si vous désirez mettre à jour votre mot de passe. Vos captures d\'écran ne seront pas supprimées.</string>
+  <string name="login_add_error_guard_code">Code de sécurité invalide.</string>
+  <string name="login_add_error_password">Nom de compte ou mot de passe non valide.</string>
+  <string name="login_add_guard_code">Code de sécurité</string>
+  <string name="login_add_guard_info">Un code de sécurité a été envoyé à l\'adresse e-mail associée à votre compte à %1$s.\nEntrez le code ci-dessous pour vous connecter.\n\nVérifiez votre dossier de spam si vous ne le trouvez pas dans votre boîte de réception.\nSi vous ne trouvez pas le message, contactez le Support Steam.</string>
+  <string name="login_add_guard_name">Nom de l\'appareil</string>
+  <string name="login_add_info">Entrez vos détails de connexion à Steam.\nVous serez déconnecté de vos autres appareils.</string>
+  <string name="login_add_label">Ajouter un compte</string>
+  <string name="login_add_password">Mot de passe</string>
+  <string name="login_add_privacy">Vos informations de connexion seront uniquement envoyées aux serveurs Steam et nulle part ailleurs. Sur cet appareil, une clé de connexion, mais pas votre mot de passe sera stockée, et vous pourrez supprimer le compte des paramètres de votre appareil (vos captures d\'écran ne seront pas supprimées).</string>
+  <string name="login_add_progress">Réception des informations de connexion</string>
+  <string name="login_select_action_add">Ajouter un compte</string>
+  <string name="login_select_corrupted">Ce compte est corrompu. Supprimez-le des paramètres de votre appareil. Vos captures d\'écran ne seront pas supprimés.</string>
+  <string name="login_select_info">Appuyez sur le bouton "Ajouter un compte" dans la barre d\'actions pour démarrer.</string>
+  <string name="login_select_label">Sélectionner votre compte</string>
+  <string name="notification_failure">Impossible de prendre une capture d\'écran Steam.</string>
+  <string name="notification_failure_info">Échec de la prise de capture d\'écran de %1$s.</string>
+  <string name="notification_success">Capture d\'écran Steam prise.</string>
+  <string name="notification_success_info">Capture d\'écran de %1$s prise.</string>
+  <string name="notification_take">Steamshots - %1$s</string>
+  <string name="notification_take_info">Maintenez vos touchez de capture d\'écran pour prendre une capture d\'écran.</string>
+  <string name="preview_delete">Supprimer la capture d\'écran de cet appareil?</string>
+  <string name="preview_fail">Impossible de charger la capture d\'écran %1$d/%2$s/%3$s.</string>
+  <string name="screenshots_action_delete">Supprimer localement</string>
+  <string name="screenshots_action_share">Partager</string>
+  <string name="screenshots_action_share_gallery">Partager la galerie en ligne</string>
+  <string name="screenshots_action_upload">Envoyer</string>
+  <string name="screenshots_action_view">Voir en ligne</string>
+  <string name="screenshots_action_view_gallery">Voir la galerie en ligne</string>
+  <string name="screenshots_games_empty">Vous n\'avez pas de captures d\'écran.\n\nAppuyez sur le bouton Home, lancez un jeu et prenez des captures d\'écran en maintenant les touches de capture d\'écran de votre appareil (généralement Volume Bas + Power).\n\nUne copie non-compressée de la capture d\'écran sera sauvegardée dans le dossier de captures d\'écran par défaut de votre appareil.</string>
+  <string name="screenshots_images_contentdescription">Capture d\'écran</string>
+  <string name="screenshots_images_delete">Supprimer les captures d\'écran sélectionnées de cet appareil?</string>
+  <string name="screenshots_images_delete_single">Supprimer la capture d\'écran sélectionnée de cet appareil?</string>
+  <string name="screenshots_images_select">Sélectionner un jeu depuis la gauche.</string>
+  <string name="screenshots_images_uploaded">Envoyé</string>
+  <string name="upload_button">Envoyer</string>
+  <string name="upload_caption">Légende</string>
+  <string name="upload_error">Impossible d\'envoyer une capture d\'écran.</string>
+  <string name="upload_error_eresult">Impossible de se connecter à Steam. Il est possible que votre clé de connexion ait expirée. Essayez de supprimer votre compte des paramètres de votre appareil et de l\'ajouter à nouveau. Vos captures d\'écran ne seront pas supprimées.</string>
+  <plurals name="upload_header">
+    <item quantity="one">%1$d capture d\'écran (%2$s) de %3$s à envoyer.</item>
+    <item quantity="other">%1$d captures d\'écran (%2$s) de %3$s à envoyer.</item>
+  </plurals>
+  <string name="upload_label">Envoyer</string>
+  <string name="upload_location">Emplacement dans le jeu</string>
+  <string name="upload_progress">Transfert des captures d\'écran</string>
+  <string name="upload_size_bytes">%1$d O</string>
+  <string name="upload_size_kilobytes">%1$d Ko</string>
+  <string name="upload_size_megabytes">%1$d Mo</string>
+  <string name="upload_size_gigabytes">%1$d Go</string>
+  <string name="upload_spoiler">Spoiler potentiel</string>
+  <string name="upload_uploading">Transfert en cours…</string>
+  <string name="upload_visibility">Visibilité</string>
+  <string-array name="upload_visibility">
+    <item>Public</item>
+    <item>Amis seulement</item>
+    <item>Privé</item>
+  </string-array>
+
+</resources>

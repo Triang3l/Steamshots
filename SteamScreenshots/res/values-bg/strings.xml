@@ -5,7 +5,7 @@
   <string name="cancelling_message">Изчакване да завърши предишното действие…</string>
   <string name="cancelling_title">Завършване</string>
   <string name="delete_cancel">Отказ</string>
-  <string name="delete_ok">Добре</string>
+  <string name="delete_ok">OK</string>
   <string name="error">Грешка</string>
   <string name="error_connection">Неуспешна връзка със Steam мрежата. Проверете Вашата връзка за мобилни данни или Wi-Fi.</string>
   <string name="error_elsewhere">Вие сте влезли от другаде. Излезте от Steam от другото Ви устройство.</string>
