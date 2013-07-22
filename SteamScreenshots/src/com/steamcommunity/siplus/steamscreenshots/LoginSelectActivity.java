@@ -189,7 +189,7 @@ public final class LoginSelectActivity extends Activity {
 		if (item.getItemId() != R.id.action_login_select_add) {
 			return super.onOptionsItemSelected(item);
 		}
-		startActivity(new Intent(this, LoginAddActivity.class)
+		startActivity(new Intent(getApplicationContext(), LoginAddActivity.class)
 			.putExtra(LoginAddActivity.EXTRASTATE_FROM_APP, true));
 		return true;
 	}
@@ -408,7 +408,7 @@ class LoginSelectOnItemClick implements OnItemClickListener {
 			Toast.makeText(activity, R.string.login_select_corrupted, Toast.LENGTH_LONG).show();
 			return;
 		}
-		activity.startActivity(new Intent(activity, ScreenshotsActivity.class)
+		activity.startActivity(new Intent(activity.getApplicationContext(), ScreenshotsActivity.class)
 			.putExtra(ScreenshotsActivity.EXTRASTATE_ACCOUNT, account));
 	}
 }

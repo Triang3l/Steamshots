@@ -8,6 +8,7 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -26,6 +27,7 @@ public final class ScreenshotsActivity extends Activity {
 
 	SteamshotsAccount mAccount;
 	ActionMode mActionMode;
+	Context mApplicationContext;
 	AlertDialog mDelete;
 	FragmentManager mFragmentManager;
 	String mGame;
@@ -98,12 +100,7 @@ public final class ScreenshotsActivity extends Activity {
 			mGame = savedInstanceState.getString(STATE_GAME);
 		}
 		if (mAccount == null) {
-			Bundle extras = getIntent().getExtras();
-			if (extras == null) {
-				finish();
-				return;
-			}
-			mAccount = extras.getParcelable(EXTRASTATE_ACCOUNT);
+			mAccount = getIntent().getParcelableExtra(EXTRASTATE_ACCOUNT);
 		}
 		if ((mAccount == null) || !mAccount.mValid) {
 			finish();
@@ -112,6 +109,7 @@ public final class ScreenshotsActivity extends Activity {
 		mOnlineAddress = String.format("http://steamcommunity.com/profiles/%d/screenshots", mAccount.mSteamID);
 		mOnlineURI = Uri.parse(mOnlineAddress);
 
+		mApplicationContext = getApplicationContext();
 		mFragmentManager = getFragmentManager();
 		mResources = getResources();
 
@@ -132,7 +130,7 @@ public final class ScreenshotsActivity extends Activity {
 			}
 			transaction.commit();
 
-			startService(new Intent(this, TakeService.class)
+			startService(new Intent(mApplicationContext, TakeService.class)
 				.putExtra(TakeService.EXTRA_ACCOUNT, mAccount));
 		} else {
 			mNeedDelete = savedInstanceState.getBoolean(STATE_DELETE);
@@ -154,7 +152,7 @@ public final class ScreenshotsActivity extends Activity {
 		super.onDestroy();
 		hideDelete();
 		if (!isChangingConfigurations()) {
-			stopService(new Intent(this, TakeService.class));
+			stopService(new Intent(mApplicationContext, TakeService.class));
 		}
 	}
 
@@ -339,7 +337,7 @@ class ScreenshotsActionMode implements ActionMode.Callback {
 				for (iterator = selected.iterator(); iterator.hasNext(); ) {
 					screenshots[i++] = iterator.next();
 				}
-				activity.startActivity(new Intent(activity, UploadActivity.class)
+				activity.startActivity(new Intent(activity.mApplicationContext, UploadActivity.class)
 					.putExtra(UploadActivity.EXTRASTATE_ACCOUNT, activity.mAccount)
 					.putExtra(UploadActivity.EXTRASTATE_GAME, activity.mGame)
 					.putExtra(UploadActivity.EXTRASTATE_SCREENSHOTS, screenshots));

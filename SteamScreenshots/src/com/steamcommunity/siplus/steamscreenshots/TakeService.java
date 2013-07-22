@@ -10,6 +10,7 @@ import java.util.List;
 import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -21,6 +22,10 @@ import android.database.ContentObserver;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -56,16 +61,37 @@ public class TakeService extends Service {
 		if (packageName.equals(Utility.PACKAGE)) {
 			return;
 		}
+		mNotificationManager.cancel(NOTIFICATION_SUCCESS);
 		Notification.Builder builder = new Notification.Builder(this)
 			.setSmallIcon(R.drawable.ic_stat_notify);
 		String game = Utility.applicationLabel(mPackageManager, packageName);
 		int name = addScreenshotInner(pngPath, packageName);
 		Resources resources = mResources;
-		mNotificationManager.cancel(NOTIFICATION_SUCCESS);
 		if (name != 0) {
+			Intent intent = new Intent(mApplicationContext, PreviewActivity.class)
+				.putExtra(PreviewActivity.EXTRASTATE_ACCOUNT, mAccount)
+				.putExtra(PreviewActivity.EXTRASTATE_GAME, packageName)
+				.putExtra(PreviewActivity.EXTRASTATE_SCREENSHOT, name);
 			builder
+				.setAutoCancel(true)
+				.setContentIntent(PendingIntent.getActivity(mApplicationContext, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT))
 				.setContentTitle(resources.getString(R.string.notification_success))
 				.setContentText(resources.getString(R.string.notification_success_info, game));
+			BitmapFactory.Options options = new BitmapFactory.Options();
+			options.inMutable = true;
+			Bitmap bitmap = BitmapFactory.decodeFile(
+				ScreenshotName.folderPath(mAccount.mSteamID, packageName) +
+				ScreenshotName.nameToString(name) + ScreenshotName.THUMB_SUFFIX, options);
+			if (bitmap != null) {
+				Canvas canvas = new Canvas(bitmap);
+				ColorMatrix colorMatrix = new ColorMatrix();
+				colorMatrix.setSaturation(0.25F);
+				Paint paint = new Paint();
+				paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+				canvas.drawBitmap(bitmap, 0.0F, 0.0F, paint);
+				canvas.drawColor(0x40ffffff);
+				builder.setLargeIcon(bitmap);
+			}
 		} else {
 			builder
 				.setContentTitle(resources.getString(R.string.notification_failure))
@@ -298,7 +324,12 @@ public class TakeService extends Service {
 		mObserver = new TakeContentObserver(this);
 		mCursor.registerContentObserver(mObserver);
 
+		Intent screenshotsIntent = new Intent(mApplicationContext, ScreenshotsActivity.class)
+			.putExtra(ScreenshotsActivity.EXTRASTATE_ACCOUNT, mAccount)
+			.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
 		Notification.Builder builder = new Notification.Builder(this)
+			.setContentIntent(PendingIntent.getActivity(mApplicationContext, 0,
+				screenshotsIntent, PendingIntent.FLAG_UPDATE_CURRENT))
 			.setContentTitle(resources.getString(R.string.notification_take, mAccount.mName))
 			.setContentText(resources.getString(R.string.notification_take_info))
 			.setSmallIcon(R.drawable.ic_stat_notify)
