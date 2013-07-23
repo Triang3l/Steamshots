@@ -158,6 +158,11 @@ public final class LoginSelectActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {		
 		super.onCreate(savedInstanceState);
 
+		if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0) {
+			finish();
+			return;
+		}
+
 		mAccountManager = AccountManager.get(this);
 		mDefaultAvatar = getResources().getDrawable(R.drawable.avatar);
 
