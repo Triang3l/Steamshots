@@ -350,7 +350,7 @@ public class TakeService extends Service {
 		return mContentResolver.query(
 			MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
 			new String[] {MediaStore.Images.ImageColumns.DATA, MediaStore.Images.ImageColumns.SIZE},
-			"LOWER(" + MediaStore.Images.ImageColumns.DATA + ") LIKE '%screenshot%.png'",
+			MediaStore.Images.ImageColumns.TITLE + " LIKE 'Screenshot\\_____-__-__-__-__-__.png' ESCAPE '\\'",
 			null,
 			MediaStore.Images.ImageColumns.DATE_ADDED + " ASC");
 	}
