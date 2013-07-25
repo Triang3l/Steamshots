@@ -118,7 +118,7 @@ public class TakeService extends Service {
 		if (highestUploaded > highest) {
 			highest = highestUploaded;
 		}
-		int targetNameInt = dateInt | ((highest + 1) % 10000);
+		int targetNameInt = dateInt | ((highest + 1) % 100000);
 		String targetName = ScreenshotName.nameToString(targetNameInt);
 		String targetPath = path + targetName;
 		Bitmap bitmap = BitmapFactory.decodeFile(source);
