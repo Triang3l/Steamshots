@@ -313,6 +313,7 @@ public class TakeService extends Service {
 		Paint paint = new Paint();
 		paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
 		canvas.drawBitmap(source, (size - width) / 2.0F, (size - height) / 2.0F, paint);
+		source.recycle();
 		canvas.drawColor(0x40ffffff);
 		return target;
 	}
