@@ -30,6 +30,7 @@ public class PreviewActivity extends Activity {
 
 	SteamshotsAccount mAccount;
 	UploadedCaption mCaption;
+	boolean mFailedToLoad;
 	boolean mFromScreenshots;
 	AlertDialog mDelete;
 	String mGame;
@@ -91,19 +92,19 @@ public class PreviewActivity extends Activity {
 		long steamID = account.mSteamID;
 		Bitmap bitmap = BitmapFactory.decodeFile(ScreenshotName.folderPath(steamID, game) + name);
 		if (bitmap == null) {
+			mFailedToLoad = true;
 			widgetFail.setText(resources.getString(R.string.preview_fail, steamID, game, name));
 			widgetFail.setVisibility(View.VISIBLE);
 			widgetInfo.setVisibility(View.GONE);
 			widgetScreenshot.setVisibility(View.GONE);
 			return;
-		} else {
-			widgetScreenshot.setImageBitmap(bitmap);
-			widgetTime.setText(DateFormat.getInstance().format(new Date(
-				ScreenshotName.creationTime(screenshot, steamID, game))));
-			widgetFail.setVisibility(View.GONE);
-			widgetInfo.setVisibility(View.VISIBLE);
-			widgetScreenshot.setVisibility(View.VISIBLE);
 		}
+		widgetScreenshot.setImageBitmap(bitmap);
+		widgetTime.setText(DateFormat.getInstance().format(new Date(
+			ScreenshotName.creationTime(screenshot, steamID, game))));
+		widgetFail.setVisibility(View.GONE);
+		widgetInfo.setVisibility(View.VISIBLE);
+		widgetScreenshot.setVisibility(View.VISIBLE);
 
 		if ((savedInstanceState != null) && (savedInstanceState.getBoolean(STATE_DELETE))) {
 			showDelete();
@@ -112,6 +113,9 @@ public class PreviewActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
+		if (mFailedToLoad) {
+			return true;
+		}
 		ArrayList<UploadedCaption> captions = UploadedCaption.fromFileSorted(mAccount.mSteamID, mGame);
 		if (captions != null) {
 			UploadedCaption item;
