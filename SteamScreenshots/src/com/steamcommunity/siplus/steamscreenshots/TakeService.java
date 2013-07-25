@@ -52,7 +52,7 @@ public class TakeService extends Service {
 	String mToBeUpdated;
 
 	@SuppressWarnings("deprecation")
-	void addScreenshot(String pngPath) {
+	void addScreenshot(String source) {
 		List<ActivityManager.RunningTaskInfo> tasks = mActivityManager.getRunningTasks(1);
 		if (tasks.isEmpty()) {
 			return;
@@ -65,7 +65,7 @@ public class TakeService extends Service {
 		Notification.Builder builder = new Notification.Builder(this)
 			.setSmallIcon(R.drawable.ic_stat_notify);
 		String game = Utility.applicationLabel(mPackageManager, packageName);
-		int name = addScreenshotInner(pngPath, packageName);
+		int name = addScreenshotInner(source, packageName);
 		Resources resources = mResources;
 		if (name != 0) {
 			Intent intent = new Intent(mApplicationContext, PreviewActivity.class)
@@ -76,22 +76,8 @@ public class TakeService extends Service {
 				.setAutoCancel(true)
 				.setContentIntent(PendingIntent.getActivity(mApplicationContext, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT))
 				.setContentTitle(resources.getString(R.string.notification_success))
-				.setContentText(resources.getString(R.string.notification_success_info, game));
-			BitmapFactory.Options options = new BitmapFactory.Options();
-			options.inMutable = true;
-			Bitmap bitmap = BitmapFactory.decodeFile(
-				ScreenshotName.folderPath(mAccount.mSteamID, packageName) +
-				ScreenshotName.nameToString(name) + ScreenshotName.THUMB_SUFFIX, options);
-			if (bitmap != null) {
-				Canvas canvas = new Canvas(bitmap);
-				ColorMatrix colorMatrix = new ColorMatrix();
-				colorMatrix.setSaturation(0.25F);
-				Paint paint = new Paint();
-				paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
-				canvas.drawBitmap(bitmap, 0.0F, 0.0F, paint);
-				canvas.drawColor(0x40ffffff);
-				builder.setLargeIcon(bitmap);
-			}
+				.setContentText(resources.getString(R.string.notification_success_info, game))
+				.setLargeIcon(notificationBitmap(name, packageName));
 		} else {
 			builder
 				.setContentTitle(resources.getString(R.string.notification_failure))
@@ -107,7 +93,7 @@ public class TakeService extends Service {
 	}
 
 	@SuppressWarnings("resource")
-	int addScreenshotInner(String pngPath, String packageName) {
+	int addScreenshotInner(String source, String packageName) {
 		Calendar date = Calendar.getInstance();
 		int dateYear = date.get(Calendar.YEAR) - 2006;
 		if ((dateYear < 0) || (dateYear > 31)) {
@@ -135,7 +121,7 @@ public class TakeService extends Service {
 		int targetNameInt = dateInt | ((highest + 1) % 10000);
 		String targetName = ScreenshotName.nameToString(targetNameInt);
 		String targetPath = path + targetName;
-		Bitmap bitmap = BitmapFactory.decodeFile(pngPath);
+		Bitmap bitmap = BitmapFactory.decodeFile(source);
 		if (bitmap == null) {
 			return 0;
 		}
@@ -169,13 +155,13 @@ public class TakeService extends Service {
 		if ((height > 200) || (width > 200)) {
 			Bitmap thumb;
 			if (height > width) {
-				width = (int)(width / (height / 200.0f));
+				width = (int)(width / (height / 200.0F));
 				if (width == 0) {
 					width = 1;
 				}
 				thumb = Bitmap.createScaledBitmap(bitmap, width, 200, true);
 			} else {
-				height = (int)(height / (width / 200.0f));
+				height = (int)(height / (width / 200.0F));
 				if (height == 0) {
 					height = 1;
 				}
@@ -282,6 +268,55 @@ public class TakeService extends Service {
 		cursor.close();
 	}
 
+	Bitmap notificationBitmap(int name, String packageName) {
+		Bitmap source = BitmapFactory.decodeFile(
+			ScreenshotName.folderPath(mAccount.mSteamID, packageName) +
+			ScreenshotName.nameToString(name) + ScreenshotName.THUMB_SUFFIX);
+		if (source == null) {
+			return null;
+		}
+		int height = source.getHeight();
+		int width = source.getWidth();
+		if ((height == 0) || (width == 0)) {
+			source.recycle();
+			return null;
+		}
+		int size = (int)(64.0F * mResources.getDisplayMetrics().density);
+		if ((height > size) || (width > size)) {
+			Bitmap thumb;
+			if (height > width) {
+				height = (int)(height / (width / (float)(size)));
+				if (height == 0) {
+					height = 1;
+				}
+				width = size;
+				thumb = Bitmap.createScaledBitmap(source, size, height, true);
+			} else {
+				width = (int)(width / (height / (float)(size)));
+				if (width == 0) {
+					width = 1;
+				}
+				height = size;
+				thumb = Bitmap.createScaledBitmap(source, width, size, true);
+			}
+			source.recycle();
+			if (thumb == null) {
+				return null;
+			}
+			source = thumb;
+		}
+
+		Bitmap target = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
+		Canvas canvas = new Canvas(target);
+		ColorMatrix colorMatrix = new ColorMatrix();
+		colorMatrix.setSaturation(0.25F);
+		Paint paint = new Paint();
+		paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+		canvas.drawBitmap(source, (size - width) / 2.0F, (size - height) / 2.0F, paint);
+		canvas.drawColor(0x40ffffff);
+		return target;
+	}
+
 	@Override
 	public IBinder onBind(Intent intent) {
 		return null;
@@ -350,7 +385,7 @@ public class TakeService extends Service {
 		return mContentResolver.query(
 			MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
 			new String[] {MediaStore.Images.ImageColumns.DATA, MediaStore.Images.ImageColumns.SIZE},
-			MediaStore.Images.ImageColumns.TITLE + " LIKE 'Screenshot\\_____-__-__-__-__-__.png' ESCAPE '\\'",
+			MediaStore.Images.ImageColumns.TITLE + " LIKE 'Screenshot\\_____-__-__-__-__-__.__g' ESCAPE '\\'",
 			null,
 			MediaStore.Images.ImageColumns.DATE_ADDED + " ASC");
 	}
