@@ -34,7 +34,7 @@
   <string name="notification_success">Steam-Screenshot aufgenommen.</string>
   <string name="notification_success_info">Screenshot von %1$s aufgenommen.</string>
   <string name="notification_take">Steamshots - %1$s</string>
-  <string name="notification_take_info">Halten Sie Ihre Screenshot-Tasten, um einen Screenshot aufzunehmen.</string>
+  <string name="notification_take_info">Halten Sie Ihre Screenshot-Tasten gedrückt, um einen Screenshot aufzunehmen.</string>
   <string name="preview_delete">Screenshot von diesem Gerät löschen?</string>
   <string name="preview_fail">Konnte Screenshot nicht laden: %1$d/%2$s/%3$s</string>
   <string name="screenshots_action_delete">Löschen (lokal)</string>
@@ -43,7 +43,7 @@
   <string name="screenshots_action_upload">Hochladen</string>
   <string name="screenshots_action_view">Online ansehen</string>
   <string name="screenshots_action_view_gallery">Online-Galerie ansehen</string>
-  <string name="screenshots_games_empty">Sie haben keine Screenshots.\n\nDrücken Sie die Home-Taste, starten Sie ein Spiel und nehmen Sie Screenshots auf, indem Sie Ihre Screenshot-Tasten gedrückt halten (meist Home + Lautstärke veringern).\n\nEin unkomprimiertes Exemplar des Screenshots wird in Ihrem Standard-Screenshot-Ordner auf dem Gerät gespeichert.</string>
+  <string name="screenshots_games_empty">Sie haben keine Screenshots.\n\nDrücken Sie die Home-Taste, starten Sie ein Spiel und nehmen Sie Screenshots auf, indem Sie Ihre Screenshot-Tasten gedrückt halten (meist Home + Lautstärke verringern).\n\nEin unkomprimiertes Exemplar des Screenshots wird in Ihrem Standard-Screenshot-Ordner auf dem Gerät gespeichert.</string>
   <string name="screenshots_images_contentdescription">Screenshot</string>
   <string name="screenshots_images_delete">Ausgewählte Screenshots von diesem Gerät löschen?</string>
   <string name="screenshots_images_delete_single">Ausgewählten Screenshot von diesem Gerät löschen?</string>
