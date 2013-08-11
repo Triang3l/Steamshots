@@ -311,7 +311,6 @@ class ScreenshotsImagesOnItemClick implements OnItemClickListener {
 		ScreenshotsActivity activity = fragment.mActivity;
 		activity.startActivity(new Intent(activity.getApplicationContext(), PreviewActivity.class)
 			.putExtra(PreviewActivity.EXTRASTATE_ACCOUNT, fragment.mAccount)
-			.putExtra(PreviewActivity.EXTRASTATE_FROM_SCREENSHOTS, true)
 			.putExtra(PreviewActivity.EXTRASTATE_GAME, fragment.mGame)
 			.putExtra(PreviewActivity.EXTRASTATE_SCREENSHOT, fragment.mScreenshots[position]));
 	}

@@ -23,7 +23,6 @@ import android.widget.TextView;
 public class PreviewActivity extends Activity {
 	static final String EXTRASTATE_ACCOUNT = Utility.PACKAGE + ".PreviewActivity.EXTRASTATE_ACCOUNT";
 	static final String EXTRASTATE_CAPTION = Utility.PACKAGE + ".PreviewActivity.EXTRASTATE_CAPTION";
-	static final String EXTRASTATE_FROM_SCREENSHOTS = Utility.PACKAGE + ".PreviewActivity.EXTRASTATE_FROM_SCREENSHOTS";
 	static final String EXTRASTATE_GAME = Utility.PACKAGE + ".PreviewActivity.EXTRASTATE_GAME";
 	static final String EXTRASTATE_SCREENSHOT = Utility.PACKAGE + ".PreviewActivity.EXTRASTATE_SCREENSHOT";
 	static final String STATE_DELETE = Utility.PACKAGE + ".PreviewActivity.STATE_DELETE";
@@ -31,7 +30,6 @@ public class PreviewActivity extends Activity {
 	SteamshotsAccount mAccount;
 	UploadedCaption mCaption;
 	boolean mFailedToLoad;
-	boolean mFromScreenshots;
 	AlertDialog mDelete;
 	String mGame;
 	int mScreenshot;
@@ -65,7 +63,6 @@ public class PreviewActivity extends Activity {
 		}
 		SteamshotsAccount account = bundle.getParcelable(EXTRASTATE_ACCOUNT);
 		mCaption = bundle.getParcelable(EXTRASTATE_CAPTION);
-		mFromScreenshots = bundle.getBoolean(EXTRASTATE_FROM_SCREENSHOTS);
 		mGame = bundle.getString(EXTRASTATE_GAME);
 		mScreenshot = bundle.getInt(EXTRASTATE_SCREENSHOT);
 		if ((account == null) || (mGame == null) || (mScreenshot <= 0)) {
@@ -74,9 +71,7 @@ public class PreviewActivity extends Activity {
 		}
 		mAccount = account;
 
-		if (mFromScreenshots) {
-			Utility.enableActionBarBack(this);
-		}
+		Utility.enableActionBarBack(this);
 
 		setContentView(R.layout.view_preview);
 		widgetCaption = (TextView)(findViewById(R.id.preview_caption));
@@ -192,7 +187,6 @@ public class PreviewActivity extends Activity {
 		if (mDelete != null) {
 			outState.putBoolean(STATE_DELETE, true);
 		}
-		outState.putBoolean(EXTRASTATE_FROM_SCREENSHOTS, mFromScreenshots);
 		outState.putString(EXTRASTATE_GAME, mGame);
 		outState.putInt(EXTRASTATE_SCREENSHOT, mScreenshot);
 	}

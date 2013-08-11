@@ -68,13 +68,7 @@ public class TakeService extends Service {
 		int name = addScreenshotInner(source, packageName);
 		Resources resources = mResources;
 		if (name != 0) {
-			Intent intent = new Intent(mApplicationContext, PreviewActivity.class)
-				.putExtra(PreviewActivity.EXTRASTATE_ACCOUNT, mAccount)
-				.putExtra(PreviewActivity.EXTRASTATE_GAME, packageName)
-				.putExtra(PreviewActivity.EXTRASTATE_SCREENSHOT, name);
 			builder
-				.setAutoCancel(true)
-				.setContentIntent(PendingIntent.getActivity(mApplicationContext, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT))
 				.setContentTitle(resources.getString(R.string.notification_success))
 				.setContentText(resources.getString(R.string.notification_success_info, game))
 				.setLargeIcon(notificationBitmap(name, packageName));
@@ -361,8 +355,8 @@ public class TakeService extends Service {
 		mCursor.registerContentObserver(mObserver);
 
 		Intent screenshotsIntent = new Intent(mApplicationContext, ScreenshotsActivity.class)
-			.putExtra(ScreenshotsActivity.EXTRASTATE_ACCOUNT, mAccount)
-			.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+			.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP)
+			.putExtra(ScreenshotsActivity.EXTRASTATE_ACCOUNT, mAccount);
 		Notification.Builder builder = new Notification.Builder(this)
 			.setContentIntent(PendingIntent.getActivity(mApplicationContext, 0,
 				screenshotsIntent, PendingIntent.FLAG_UPDATE_CURRENT))
