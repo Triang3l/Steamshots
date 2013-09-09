@@ -35,7 +35,6 @@ public class ScreenshotsImagesFragment extends Fragment {
 	Resources mResources;
 	int[] mScreenshots;
 	ArrayList<Integer> mSelected;
-	BitmapDrawable[] mThumbs;
 
 	GridView widgetGrid;
 	TextView widgetSelect;
@@ -76,8 +75,6 @@ public class ScreenshotsImagesFragment extends Fragment {
 	}
 
 	void loadScreenshots() {
-		recycleThumbs();
-
 		long steamID = mAccount.mSteamID;
 		File[] files = (new File(ScreenshotName.folderPath(steamID, mGame))).listFiles(new ScreenshotFileFilter(0));
 		int length;
@@ -94,7 +91,6 @@ public class ScreenshotsImagesFragment extends Fragment {
 		UploadedCaption[] captionsArray = new UploadedCaption[length];
 		mCaptionsAtPositions = captionsArray;
 		mScreenshots = screenshots;
-		mThumbs = new BitmapDrawable[length];
 
 		if (length == 0) {
 			mActivity.deselectGame();
@@ -187,35 +183,9 @@ public class ScreenshotsImagesFragment extends Fragment {
 		outState.putIntegerArrayList(STATE_SELECTED, mSelected);
 	}
 
-	void recycleThumbs() {
-		if (mThumbs == null) {
-			return;
-		}
-		int i;
-		BitmapDrawable thumb;
-		BitmapDrawable[] thumbs = mThumbs;
-		for (i = 0; i < thumbs.length; ++i) {
-			thumb = thumbs[i];
-			if (thumb != null) {
-				thumb.getBitmap().recycle();
-				thumbs[i] = null;
-			}
-		}
-	}
-
-	BitmapDrawable requestThumb(int index) {
-		BitmapDrawable thumb = mThumbs[index];
-		if (thumb != null) {
-			return thumb;
-		}
-		thumb = new BitmapDrawable(mResources, ScreenshotName.folderPath(mAccount.mSteamID, mGame) +
-			'/' + ScreenshotName.nameToString(mScreenshots[index]) + ScreenshotName.THUMB_SUFFIX);
-		mThumbs[index] = thumb;
-		return thumb;
-	}
-
 	void toggleSelection(int position) {
 		int current;
+		boolean deselected = false;
 		Iterator<Integer> iterator;
 		ArrayList<Integer> selected = mSelected;
 		int screenshot = mScreenshots[position];
@@ -224,15 +194,26 @@ public class ScreenshotsImagesFragment extends Fragment {
 			if (current == screenshot) {
 				iterator.remove();
 				mActivity.refreshActionBar();
-				mAdapter.notifyDataSetChanged();
-				return;
+				deselected = true;
+				break;
 			}
 		}
-		selected.add(screenshot);
-		Collections.sort(selected);
-		Collections.reverse(selected);
-		mActivity.refreshActionBar();
-		mAdapter.notifyDataSetChanged();
+		if (!deselected) {
+			selected.add(screenshot);
+			Collections.sort(selected);
+			Collections.reverse(selected);
+			mActivity.refreshActionBar();
+		}
+		View view = widgetGrid.getChildAt(position - widgetGrid.getFirstVisiblePosition());
+		if (view != null) {
+			if (deselected) {
+				view.setBackgroundResource(0);
+				view.findViewById(R.id.grid_screenshot_selected).setVisibility(View.GONE);
+			} else {
+				view.setBackgroundResource(android.R.color.holo_blue_dark);
+				view.findViewById(R.id.grid_screenshot_selected).setVisibility(View.VISIBLE);
+			}
+		}
 	}
 }
 
@@ -276,7 +257,9 @@ class ScreenshotsImagesAdapter extends BaseAdapter {
 			return null;
 		}
 		View view = mLayoutInflater.inflate(R.layout.grid_screenshot, parent, false);
-		((ImageView)(view.findViewById(R.id.grid_screenshot_image))).setImageDrawable(fragment.requestThumb(position));
+		((ImageView)(view.findViewById(R.id.grid_screenshot_image))).setImageDrawable(
+			new BitmapDrawable(fragment.mResources, ScreenshotName.folderPath(fragment.mAccount.mSteamID, fragment.mGame) +
+				'/' + ScreenshotName.nameToString(fragment.mScreenshots[position]) + ScreenshotName.THUMB_SUFFIX));
 		view.findViewById(R.id.grid_screenshot_uploaded).setVisibility(
 			fragment.mCaptionsAtPositions[position] != null ? View.VISIBLE : View.GONE);
 		Iterator<Integer> iterator;

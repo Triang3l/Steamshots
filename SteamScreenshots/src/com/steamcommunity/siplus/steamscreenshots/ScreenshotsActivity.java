@@ -18,6 +18,8 @@ import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.GridView;
 import android.widget.ShareActionProvider;
 
 public final class ScreenshotsActivity extends Activity {
@@ -382,7 +384,15 @@ class ScreenshotsActionMode implements ActionMode.Callback {
 			return;
 		}
 		fragment.mSelected = new ArrayList<Integer>(fragment.mScreenshots.length);
-		fragment.mAdapter.notifyDataSetChanged();
+		GridView grid = fragment.widgetGrid;
+		int i;
+		int length = grid.getChildCount();
+		View view;
+		for (i = 0; i < length; ++i) {
+			view = grid.getChildAt(i);
+			view.setBackgroundResource(0);
+			view.findViewById(R.id.grid_screenshot_selected).setVisibility(View.GONE);
+		}
 	}
 
 	@Override
