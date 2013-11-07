@@ -4,7 +4,7 @@
   <item
     android:id="@+id/action_login_select_add"
     android:icon="@android:drawable/ic_menu_add"
-    android:showAsAction="always"
+    android:showAsAction="always|withText"
     android:title="@string/login_select_action_add" />
 
 </menu>
