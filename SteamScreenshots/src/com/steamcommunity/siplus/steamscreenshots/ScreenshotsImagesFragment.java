@@ -158,7 +158,9 @@ public class ScreenshotsImagesFragment extends Fragment {
 
 		if (savedInstanceState != null) {
 			mSelected = savedInstanceState.getIntegerArrayList(STATE_SELECTED);
-			filterDeadSelected();
+			if (mSelected != null) {
+				filterDeadSelected();
+			}
 		}
 		if (mSelected == null) {
 			mSelected = new ArrayList<Integer>(mScreenshots.length);
