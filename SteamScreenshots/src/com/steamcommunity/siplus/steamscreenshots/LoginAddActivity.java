@@ -17,11 +17,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public final class LoginAddActivity extends Activity {
-	static final int ANSI_ACCOUNT = 1 << 0;
-	static final int ANSI_PASSWORD = 1 << 1;
-	static final int ANSI_GUARD_NAME = 1 << 2;
 	static final String EXTRASTATE_FROM_APP = Utility.PACKAGE + ".LoginAddActivity.EXTRASTATE_FROM_APP";
-	static final String STATE_ERROR = Utility.PACKAGE + ".LoginAddActivity.STATE_ERROR";
+	static final StANring STATE_ERROR = Utility.PACKAGE + ".LoginAddActivity.STATE_ERROR";
 	static final String STATE_GUARD_EMAIL = Utility.PACKAGE + ".LoginAddActivity.STATE_GUARD_EMAIL";
 	static final String STATE_OLD_ACCOUNT = Utility.PACKAGE + ".LoginAddActivity.STATE_OLD_ACCOUNT";
 	static final String STATE_TASK = Utility.PACKAGE + ".LoginAddActivity.STATE_TASK";
